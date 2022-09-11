@@ -2416,6 +2416,27 @@
                                 "__comment": false
                             },
                             "id": "1b02adff-0c8e-40cf-8c1c-5662bae4c1a4"
+                        },
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "2",
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                        "args": {
+                                            "customEventId": "bc25df7b-e231-4f16-8811-6ccc6b04418e"
+                                        },
+                                        "id": "957558e5-b117-4c22-b4b1-63ee55aeed99"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "fca87d0a-991b-4fa7-9cc6-bc82cb30c4da"
                         }
                     ],
                     "hit1Script": [],
@@ -2428,6 +2449,14 @@
             ],
             "triggers": [],
             "script": [
+                {
+                    "command": "EVENT_SET_FALSE",
+                    "args": {
+                        "variable": "2",
+                        "__collapse": true
+                    },
+                    "id": "1a22e20a-38b9-4d75-a5d3-8e9b8cd59724"
+                },
                 {
                     "command": "EVENT_SET_FALSE",
                     "args": {
@@ -5680,7 +5709,7 @@
                                         {
                                             "command": "EVENT_GBVM_SCRIPT",
                                             "args": {
-                                                "script": "VM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 40\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 36\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 32\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 28\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 24\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 20\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 16\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 12\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 8\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 4\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -4\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -8\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -12\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -16\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -20\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -24\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -28\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -32\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -36\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -40\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE",
+                                                "script": "VM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 40\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 36\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 32\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 28\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 24\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 20\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 16\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 12\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 8\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 4\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -4\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -8\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -12\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -16\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -20\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -24\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -28\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -32\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -36\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -40\nVM_SET_CONST_INT16 _camera_offset_y, 12",
                                                 "__collapse": false
                                             },
                                             "id": "08ee4913-9ac8-42b3-add4-c991628740a7"
@@ -5735,7 +5764,7 @@
                                         {
                                             "command": "EVENT_GBVM_SCRIPT",
                                             "args": {
-                                                "script": "VM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -40\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -36\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -32\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -28\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -24\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -20\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -16\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -12\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -8\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -4\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 4\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 8\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 12\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 16\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 20\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 24\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 28\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 32\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 36\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 40\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE",
+                                                "script": "VM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -40\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -36\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -32\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -28\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -24\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -20\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -16\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -12\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -8\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, -4\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 4\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 8\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 12\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 16\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 20\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 24\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 28\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 32\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 36\nVM_SET_CONST_INT16 _camera_offset_y, 12\nVM_IDLE\nVM_SET_CONST_INT16 _camera_offset_x, 40\nVM_SET_CONST_INT16 _camera_offset_y, 12",
                                                 "__collapse": false
                                             },
                                             "id": "2e01b3e1-3e98-44c9-b885-78b89850e919"
@@ -5765,6 +5794,80 @@
                         "false": []
                     },
                     "id": "cf4aa64e-b9d6-4ad5-957d-079e55e69c5e"
+                }
+            ]
+        },
+        {
+            "id": "bc25df7b-e231-4f16-8811-6ccc6b04418e",
+            "name": "Player Scripts",
+            "description": "",
+            "variables": {},
+            "actors": {},
+            "symbol": "script_2",
+            "script": [
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "left"
+                        ],
+                        "override": false,
+                        "__scriptTabs": "press",
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "direction": {
+                                        "type": "direction",
+                                        "value": "left"
+                                    },
+                                    "__collapse": true
+                                },
+                                "id": "528ed643-c1bb-4750-b178-8bce1747d035"
+                            }
+                        ]
+                    },
+                    "id": "744f8db8-1b4a-4566-ab63-fb15de73f0ae"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "right"
+                        ],
+                        "override": false,
+                        "__scriptTabs": "press",
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "direction": {
+                                        "type": "direction",
+                                        "value": "right"
+                                    },
+                                    "__collapse": true
+                                },
+                                "id": "bcd9f409-7141-46ef-8749-25cd1061d503"
+                            }
+                        ]
+                    },
+                    "id": "42c12368-af0f-4cb3-bebe-e31e8173197e"
+                },
+                {
+                    "command": "EVENT_SET_TRUE",
+                    "args": {
+                        "variable": "2",
+                        "__collapse": true
+                    },
+                    "id": "5fe2c8bb-43bd-449c-a57f-d42a70175ad4"
                 }
             ]
         }
@@ -5899,6 +6002,11 @@
             "id": "1",
             "name": "playerCameraLeft",
             "symbol": "var_playercameraleft"
+        },
+        {
+            "id": "2",
+            "name": "playerScripts",
+            "symbol": "var_playerscripts"
         }
     ],
     "engineFieldValues": [
