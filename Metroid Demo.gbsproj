@@ -2422,14 +2422,16 @@
                             "args": {
                                 "variable": "2",
                                 "__collapseElse": true,
-                                "__disableElse": true
+                                "__disableElse": true,
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
                                     {
                                         "command": "EVENT_CALL_CUSTOM_EVENT",
                                         "args": {
-                                            "customEventId": "bc25df7b-e231-4f16-8811-6ccc6b04418e"
+                                            "customEventId": "bc25df7b-e231-4f16-8811-6ccc6b04418e",
+                                            "__collapse": true
                                         },
                                         "id": "957558e5-b117-4c22-b4b1-63ee55aeed99"
                                     }
@@ -7289,6 +7291,84 @@
                         "__collapse": true
                     },
                     "id": "5fe2c8bb-43bd-449c-a57f-d42a70175ad4"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "down"
+                        ],
+                        "override": false,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "PT_EVENT_PLAYER_FIELD_STORE",
+                                "args": {
+                                    "field": "grounded",
+                                    "variable": "3",
+                                    "__collapse": true
+                                },
+                                "id": "6eb23dee-ce8f-4436-8c82-f7b64cff6a06"
+                            },
+                            {
+                                "command": "EVENT_IF_TRUE",
+                                "args": {
+                                    "variable": "3",
+                                    "__collapseElse": true,
+                                    "__disableElse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_TRUE",
+                                            "args": {
+                                                "variable": "5",
+                                                "__collapse": true
+                                            },
+                                            "id": "650b81bc-d8d2-4794-b8c7-29db17080dd0"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "8e0946d1-0a2e-42bb-9e85-b688315ebb0c"
+                            }
+                        ]
+                    },
+                    "id": "d10a2a9c-9212-47ab-bba4-c38f7e1170e2"
+                }
+            ]
+        },
+        {
+            "id": "6949978c-1804-415c-8ce9-7605e64be4a2",
+            "name": "Player States",
+            "description": "",
+            "variables": {},
+            "actors": {},
+            "symbol": "script_3",
+            "script": [
+                {
+                    "command": "EVENT_IF_TRUE",
+                    "args": {
+                        "variable": "5",
+                        "__collapseElse": true,
+                        "__disableElse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": "playerCrouch"
+                                },
+                                "id": "46a1ce2b-f27a-45b6-94fc-9fa75fa167f5"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "0636a86e-c781-4639-a79d-9335e0538c18"
                 }
             ]
         }
@@ -7438,6 +7518,11 @@
             "id": "4",
             "name": "playerVelocityY",
             "symbol": "var_playervelocityy"
+        },
+        {
+            "id": "5",
+            "name": "playerCrouch",
+            "symbol": "var_playercrouch"
         }
     ],
     "engineFieldValues": [
@@ -7464,7 +7549,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 162,
-        "worldScrollY": 547,
+        "worldScrollY": 400,
         "zoom": 200,
         "customColorsEnabled": true,
         "sgbEnabled": false,
