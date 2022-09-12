@@ -1,6 +1,6 @@
 {
     "name": "Metroid Demo",
-    "author": "marco-armstrong",
+    "author": "Marco Armstrong",
     "_version": "3.1.0",
     "_release": "3",
     "scenes": [
@@ -2490,6 +2490,14 @@
                         "__collapse": true
                     },
                     "id": "0b58188a-a505-4689-8b29-8be43692f8ac"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "a8338094-bfdd-4c79-b7ef-6bab3000df14",
+                        "__collapse": true
+                    },
+                    "id": "f4ba4672-f097-4a9d-b66e-3ffff5f6d648"
                 }
             ],
             "playerHit1Script": [],
@@ -7285,21 +7293,14 @@
                     "id": "42c12368-af0f-4cb3-bebe-e31e8173197e"
                 },
                 {
-                    "command": "EVENT_SET_TRUE",
-                    "args": {
-                        "variable": "2",
-                        "__collapse": true
-                    },
-                    "id": "5fe2c8bb-43bd-449c-a57f-d42a70175ad4"
-                },
-                {
                     "command": "EVENT_SET_INPUT_SCRIPT",
                     "args": {
                         "input": [
                             "down"
                         ],
                         "override": false,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -7328,6 +7329,14 @@
                                                 "__collapse": true
                                             },
                                             "id": "650b81bc-d8d2-4794-b8c7-29db17080dd0"
+                                        },
+                                        {
+                                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                                            "args": {
+                                                "customEventId": "6949978c-1804-415c-8ce9-7605e64be4a2",
+                                                "__collapse": true
+                                            },
+                                            "id": "ac475eaf-e5ad-45b6-a008-ec3d1f2dcc04"
                                         }
                                     ],
                                     "false": []
@@ -7337,6 +7346,71 @@
                         ]
                     },
                     "id": "d10a2a9c-9212-47ab-bba4-c38f7e1170e2"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "a"
+                        ],
+                        "override": false,
+                        "__scriptTabs": "press",
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SOUND_PLAY_EFFECT",
+                                "args": {
+                                    "type": "f23fa70e-cb01-4d22-b631-32780170e1bd",
+                                    "priority": "medium",
+                                    "pitch": 4,
+                                    "frequency": 200,
+                                    "duration": 0.5,
+                                    "wait": true,
+                                    "effect": 10
+                                },
+                                "id": "5ff27301-42ff-453a-b044-32e6efcf5848"
+                            }
+                        ]
+                    },
+                    "id": "a142b78e-0f01-413e-930d-0b15828952c4"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "b"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SOUND_PLAY_EFFECT",
+                                "args": {
+                                    "type": "f23fa70e-cb01-4d22-b631-32780170e1bd",
+                                    "priority": "medium",
+                                    "pitch": 4,
+                                    "frequency": 200,
+                                    "duration": 0.5,
+                                    "wait": true,
+                                    "effect": 12
+                                },
+                                "id": "fec2c26d-45fb-4db3-962e-a39010ec7a7a"
+                            }
+                        ]
+                    },
+                    "id": "0dbf8193-f0ba-4e2e-b586-1c880cdcb854"
+                },
+                {
+                    "command": "EVENT_SET_TRUE",
+                    "args": {
+                        "variable": "2",
+                        "__collapse": true
+                    },
+                    "id": "5fe2c8bb-43bd-449c-a57f-d42a70175ad4"
                 }
             ]
         },
@@ -7358,12 +7432,36 @@
                     "children": {
                         "true": [
                             {
+                                "command": "EVENT_ACTOR_SET_BOUNDS",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "x": 0,
+                                    "y": 0,
+                                    "width": 16,
+                                    "height": 24
+                                },
+                                "id": "6ce99c8f-e4ff-4721-b7ac-8f32fb78e1a1"
+                            },
+                            {
                                 "command": "EVENT_ACTOR_SET_STATE",
                                 "args": {
                                     "actorId": "$self$",
                                     "spriteStateId": "playerCrouch"
                                 },
                                 "id": "46a1ce2b-f27a-45b6-94fc-9fa75fa167f5"
+                            },
+                            {
+                                "command": "EVENT_SOUND_PLAY_EFFECT",
+                                "args": {
+                                    "type": "f23fa70e-cb01-4d22-b631-32780170e1bd",
+                                    "priority": "medium",
+                                    "pitch": 4,
+                                    "frequency": 200,
+                                    "duration": 0.5,
+                                    "wait": true,
+                                    "effect": 11
+                                },
+                                "id": "f5ffb0ce-8dd2-4441-8ecd-8b2c9f646f78"
                             }
                         ],
                         "false": []
@@ -7399,7 +7497,17 @@
             "type": "mod"
         }
     ],
-    "sounds": [],
+    "sounds": [
+        {
+            "id": "f23fa70e-cb01-4d22-b631-32780170e1bd",
+            "name": "hammered.sav",
+            "symbol": "sound_hammered_sav",
+            "filename": "hammered.sav",
+            "type": "fxhammer",
+            "inode": "54698467",
+            "_v": 1662944359671
+        }
+    ],
     "fonts": [
         {
             "id": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
