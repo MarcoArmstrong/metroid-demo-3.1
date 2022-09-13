@@ -2446,7 +2446,7 @@
                                 "variable": "6",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -2522,6 +2522,103 @@
                                 "false": []
                             },
                             "id": "dc4ec285-ba17-4858-ac32-a74ca2f37e95"
+                        },
+                        {
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "6",
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_FALSE",
+                                        "args": {
+                                            "variable": "5",
+                                            "__collapseElse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_IF_INPUT",
+                                                    "args": {
+                                                        "input": [
+                                                            "down"
+                                                        ],
+                                                        "__collapseElse": true,
+                                                        "__disableElse": true
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_IF_TRUE",
+                                                                "args": {
+                                                                    "variable": "3",
+                                                                    "__collapseElse": true,
+                                                                    "__disableElse": true
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "command": "EVENT_GBVM_SCRIPT",
+                                                                            "args": {
+                                                                                "script": "VM_IDLE\nVM_IDLE\nVM_IDLE\nVM_IDLE\nVM_IDLE\nVM_IDLE\nVM_IDLE\nVM_IDLE",
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "id": "f69ae8c7-bf5c-4982-9afd-ea1cc672a3a6"
+                                                                        },
+                                                                        {
+                                                                            "command": "EVENT_IF_FALSE",
+                                                                            "args": {
+                                                                                "variable": "6",
+                                                                                "__collapseElse": true,
+                                                                                "__collapse": false,
+                                                                                "__disableElse": true
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "command": "EVENT_ACTOR_SET_STATE",
+                                                                                        "args": {
+                                                                                            "actorId": "player",
+                                                                                            "spriteStateId": "playerCrouch",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "id": "324f9421-6c3f-44ad-9cc4-90e918f61121"
+                                                                                    },
+                                                                                    {
+                                                                                        "command": "EVENT_SET_TRUE",
+                                                                                        "args": {
+                                                                                            "variable": "5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "id": "b7fdea34-2a33-419d-8833-7e4c46900524"
+                                                                                    }
+                                                                                ],
+                                                                                "false": []
+                                                                            },
+                                                                            "id": "170e7fc4-cdd2-4acb-b9f3-e50d516be890"
+                                                                        }
+                                                                    ],
+                                                                    "false": []
+                                                                },
+                                                                "id": "0af60763-d429-489b-99f6-152b981613c0"
+                                                            }
+                                                        ],
+                                                        "false": []
+                                                    },
+                                                    "id": "cd8261cd-0e11-4948-9e5d-8a258dd1e952"
+                                                }
+                                            ],
+                                            "false": []
+                                        },
+                                        "id": "5798cd09-1bda-4600-a86c-2f94e9dd12d6"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "31e28774-9c41-4e32-8aeb-a6ad4c016ff8"
                         }
                     ],
                     "hit1Script": [],
@@ -7376,7 +7473,7 @@
                         ],
                         "override": false,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -7450,7 +7547,8 @@
                             "a"
                         ],
                         "override": false,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
