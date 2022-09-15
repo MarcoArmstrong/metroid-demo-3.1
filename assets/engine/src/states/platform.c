@@ -302,7 +302,7 @@ void platform_update() BANKED {
 	
 			// Setting the Jump Buffer when jump is pressed while not on the ground
 			if (INPUT_PRESSED(INPUT_PLATFORM_JUMP) && !grounded) {
-				jb_val = 6; // Sets the Jump Buffer to x frames; Default 6
+				jb_val = 0; // Sets the Jump Buffer to x frames; Default 6
 			}
 		}
 	}
