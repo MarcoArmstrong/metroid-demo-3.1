@@ -2380,7 +2380,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "be9bc220-d5ac-4242-a9db-fcf599d8dd98",
-                    "x": 27,
+                    "x": 28,
                     "y": 75
                 },
                 {
@@ -3046,6 +3046,61 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "03c33b3c-93e6-49eb-a017-f371ca7c53eb",
+                    "x": 27,
+                    "y": 68,
+                    "symbol": "trigger_2",
+                    "width": 2,
+                    "height": 8,
+                    "script": [
+                        {
+                            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "right"
+                                ]
+                            },
+                            "id": "a37d73af-93e0-40da-b859-18b0b83b5055"
+                        },
+                        {
+                            "command": "PT_EVENT_PLAYER_FIELD_SET",
+                            "args": {
+                                "field": "pl_vel_x",
+                                "variable": "L0",
+                                "value": 0,
+                                "type": "number",
+                                "__collapse": true
+                            },
+                            "id": "b8c8c5f9-194f-44cd-be96-e7da40b85d9a"
+                        },
+                        {
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "right"
+                                ],
+                                "override": true,
+                                "__scriptTabs": "press",
+                                "__collapse": true
+                            },
+                            "children": {
+                                "true": []
+                            },
+                            "id": "d443fae2-b002-4fbc-a293-9e90ed3cb2e3"
+                        }
+                    ],
+                    "leaveScript": [
+                        {
+                            "command": "EVENT_SET_FALSE",
+                            "args": {
+                                "variable": "2"
+                            },
+                            "id": "f5bf96e1-e4dd-4d5b-91fa-69fb969618d8"
+                        }
+                    ]
                 }
             ],
             "script": [
@@ -5486,7 +5541,7 @@
                                     "tiles": [
                                         {
                                             "id": "d1d4b4e6-dc14-48d5-9213-55d0d15bc7f1",
-                                            "x": 8,
+                                            "x": 16,
                                             "y": 48,
                                             "sliceX": 0,
                                             "sliceY": 0,
@@ -5499,7 +5554,7 @@
                                         },
                                         {
                                             "id": "5bb023fd-03db-4feb-a773-ab648c6c4c06",
-                                            "x": 8,
+                                            "x": 16,
                                             "y": 32,
                                             "sliceX": 8,
                                             "sliceY": 0,
@@ -5512,7 +5567,7 @@
                                         },
                                         {
                                             "id": "85b9e4e6-b6d0-45f9-93ad-1abb6393e008",
-                                            "x": 8,
+                                            "x": 16,
                                             "y": 16,
                                             "sliceX": 8,
                                             "sliceY": 0,
@@ -5525,7 +5580,7 @@
                                         },
                                         {
                                             "id": "c0583cc6-d6d9-44ee-b153-8f75f5645434",
-                                            "x": 8,
+                                            "x": 16,
                                             "y": 0,
                                             "sliceX": 0,
                                             "sliceY": 0,
@@ -5607,11 +5662,11 @@
                 }
             ],
             "numTiles": 2,
-            "canvasWidth": 16,
+            "canvasWidth": 32,
             "canvasHeight": 64,
-            "boundsX": 0,
+            "boundsX": -8,
             "boundsY": 0,
-            "boundsWidth": 16,
+            "boundsWidth": 32,
             "boundsHeight": 64,
             "animSpeed": 15
         },
@@ -11426,8 +11481,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 775,
-        "worldScrollY": 934,
+        "worldScrollX": 434,
+        "worldScrollY": 953,
         "zoom": 200,
         "customColorsEnabled": true,
         "sgbEnabled": false,
