@@ -2361,7 +2361,7 @@
             "y": 251.5,
             "actors": [
                 {
-                    "name": "",
+                    "name": "Door 1",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "0658d854-4b5b-429a-8364-72483d3cf4d8",
@@ -3145,7 +3145,7 @@
                     "leaveScript": []
                 },
                 {
-                    "name": "",
+                    "name": "Door 1 Trigger",
                     "id": "03c33b3c-93e6-49eb-a017-f371ca7c53eb",
                     "x": 27,
                     "y": 68,
@@ -3216,6 +3216,20 @@
                                 "true": [],
                                 "false": [
                                     {
+                                        "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                                        "args": {
+                                            "input": [
+                                                "b",
+                                                "a",
+                                                "left",
+                                                "up",
+                                                "right",
+                                                "down"
+                                            ]
+                                        },
+                                        "id": "cf5bdb72-582b-48b9-9f67-dd89aefafbc3"
+                                    },
+                                    {
                                         "command": "EVENT_SET_FALSE",
                                         "args": {
                                             "variable": "2"
@@ -3225,6 +3239,57 @@
                                 ]
                             },
                             "id": "08db54f5-3c5f-4dc6-9d1c-cbb5fd6d5dc3"
+                        }
+                    ]
+                },
+                {
+                    "name": "Morph Ball 1 Trigger",
+                    "id": "7c5c2126-d0d8-4214-a821-356860c3f4e4",
+                    "x": 8,
+                    "y": 74,
+                    "symbol": "trigger_4",
+                    "width": 10,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "b",
+                                    "a",
+                                    "up",
+                                    "down"
+                                ],
+                                "override": true,
+                                "__scriptTabs": "press"
+                            },
+                            "children": {
+                                "true": []
+                            },
+                            "id": "b2e5e992-a012-4cc2-b2f6-8bacc18ed0f3"
+                        }
+                    ],
+                    "leaveScript": [
+                        {
+                            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "b",
+                                    "a",
+                                    "left",
+                                    "up",
+                                    "down",
+                                    "right"
+                                ]
+                            },
+                            "id": "19d57bd1-58dd-48aa-9398-7d16953c076d"
+                        },
+                        {
+                            "command": "EVENT_SET_FALSE",
+                            "args": {
+                                "variable": "2"
+                            },
+                            "id": "a2da4448-8448-4f3d-a998-50faacf1b451"
                         }
                     ]
                 }
@@ -5689,7 +5754,7 @@
                     "y": 0
                 },
                 {
-                    "name": "",
+                    "name": "Door 1",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "0658d854-4b5b-429a-8364-72483d3cf4d8",
@@ -5834,7 +5899,7 @@
                     "leaveScript": []
                 },
                 {
-                    "name": "",
+                    "name": "Door 1 Trigger",
                     "id": "4dfc0e97-5718-40d8-aae2-715e159b47a5",
                     "x": 1,
                     "y": 12,
@@ -5904,6 +5969,20 @@
                             "children": {
                                 "true": [],
                                 "false": [
+                                    {
+                                        "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                                        "args": {
+                                            "input": [
+                                                "b",
+                                                "a",
+                                                "left",
+                                                "up",
+                                                "down",
+                                                "right"
+                                            ]
+                                        },
+                                        "id": "3751d32f-de5e-4c95-a56a-bd37dd6ed970"
+                                    },
                                     {
                                         "command": "EVENT_SET_FALSE",
                                         "args": {
@@ -11186,6 +11265,17 @@
                                                         "id": "dac288d7-49c2-4c51-998e-16be8483e5d9"
                                                     },
                                                     {
+                                                        "command": "EVENT_ACTOR_SET_BOUNDS",
+                                                        "args": {
+                                                            "actorId": "$self$",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "width": 16,
+                                                            "height": 16
+                                                        },
+                                                        "id": "45836daa-f5cd-4949-9396-509524946f82"
+                                                    },
+                                                    {
                                                         "command": "EVENT_SET_TRUE",
                                                         "args": {
                                                             "variable": "8"
@@ -11269,6 +11359,17 @@
                                                                     "id": "3c9f6ee5-d68f-49a8-85e5-f99da68a9d61"
                                                                 },
                                                                 {
+                                                                    "command": "EVENT_ACTOR_SET_BOUNDS",
+                                                                    "args": {
+                                                                        "actorId": "$self$",
+                                                                        "x": 0,
+                                                                        "y": 0,
+                                                                        "width": 16,
+                                                                        "height": 24
+                                                                    },
+                                                                    "id": "8b1dfea7-92a8-4bae-856c-a188f5ea5dfc"
+                                                                },
+                                                                {
                                                                     "command": "EVENT_SET_TRUE",
                                                                     "args": {
                                                                         "variable": "5"
@@ -11323,6 +11424,17 @@
                                                             "spriteStateId": "playerAimDown"
                                                         },
                                                         "id": "b0a2b320-5980-45fa-99cc-ff2309f71a95"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_ACTOR_SET_BOUNDS",
+                                                        "args": {
+                                                            "actorId": "$self$",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "width": 16,
+                                                            "height": 32
+                                                        },
+                                                        "id": "494fd17d-0a35-4038-8eae-560caec63947"
                                                     },
                                                     {
                                                         "command": "EVENT_SET_TRUE",
@@ -11459,6 +11571,17 @@
                                             "id": "7c596a2f-9a99-4672-ab13-aef95b67a510"
                                         },
                                         {
+                                            "command": "EVENT_ACTOR_SET_BOUNDS",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "x": 0,
+                                                "y": 0,
+                                                "width": 16,
+                                                "height": 32
+                                            },
+                                            "id": "4a3039a6-f2bc-4dc3-a645-14842ee2453b"
+                                        },
+                                        {
                                             "command": "EVENT_SET_TRUE",
                                             "args": {
                                                 "variable": "7"
@@ -11500,6 +11623,17 @@
                                                 "spriteStateId": "playerCrouch"
                                             },
                                             "id": "e64ed17f-8da8-4821-bb4d-e762aeafdbb2"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_BOUNDS",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "x": 0,
+                                                "y": 0,
+                                                "width": 16,
+                                                "height": 24
+                                            },
+                                            "id": "c1213edd-769c-426a-bbe9-ab887428b62f"
                                         },
                                         {
                                             "command": "EVENT_SET_TRUE",
@@ -11553,7 +11687,7 @@
                         ],
                         "override": false,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -11586,6 +11720,24 @@
                                             "id": "13819520-fd0f-4c04-a928-c9d181d36747"
                                         },
                                         {
+                                            "command": "EVENT_ACTOR_SET_BOUNDS",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "x": 0,
+                                                "y": 0,
+                                                "width": 16,
+                                                "height": 32
+                                            },
+                                            "id": "7fdf7da2-62ed-4cab-bf9b-d4d85f87bbfe"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_TRUE",
+                                            "args": {
+                                                "variable": "7"
+                                            },
+                                            "id": "dc857709-15db-4a1a-8886-8e5d8b4bac49"
+                                        },
+                                        {
                                             "command": "EVENT_SET_FALSE",
                                             "args": {
                                                 "variable": "5"
@@ -11609,7 +11761,7 @@
                         ],
                         "override": false,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -11628,7 +11780,8 @@
                                 "command": "EVENT_IF_TRUE",
                                 "args": {
                                     "variable": "5",
-                                    "__collapseElse": true
+                                    "__collapseElse": false,
+                                    "__disableElse": true
                                 },
                                 "children": {
                                     "true": [
@@ -11639,6 +11792,24 @@
                                                 "spriteStateId": ""
                                             },
                                             "id": "cc2cdfce-3b01-4cb3-9b94-60f57938637e"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_BOUNDS",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "x": 0,
+                                                "y": 0,
+                                                "width": 16,
+                                                "height": 32
+                                            },
+                                            "id": "85497c28-7a8e-4a69-9dc6-ea7be80bc9b5"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_TRUE",
+                                            "args": {
+                                                "variable": "7"
+                                            },
+                                            "id": "eef84f98-3f27-43b9-adeb-8aa24851b3b9"
                                         },
                                         {
                                             "command": "EVENT_SET_FALSE",
@@ -11765,6 +11936,17 @@
                                                         "id": "94f71aa3-9d65-4f3d-aaee-33f62ec745dc"
                                                     },
                                                     {
+                                                        "command": "EVENT_ACTOR_SET_BOUNDS",
+                                                        "args": {
+                                                            "actorId": "$self$",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "width": 16,
+                                                            "height": 32
+                                                        },
+                                                        "id": "b064faee-9d49-44b7-b00b-9d2c18303457"
+                                                    },
+                                                    {
                                                         "command": "EVENT_SET_TRUE",
                                                         "args": {
                                                             "variable": "6",
@@ -11803,6 +11985,24 @@
                                                             "spriteStateId": ""
                                                         },
                                                         "id": "e0d978dd-a8ac-4d2b-b4ae-cb20d1e2a660"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_ACTOR_SET_BOUNDS",
+                                                        "args": {
+                                                            "actorId": "$self$",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "width": 16,
+                                                            "height": 32
+                                                        },
+                                                        "id": "e840a18c-ed88-4692-a2ce-7a54ddbc30bd"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_TRUE",
+                                                        "args": {
+                                                            "variable": "7"
+                                                        },
+                                                        "id": "7cb9a893-ff59-4fcc-a62a-b63284af5d2c"
                                                     },
                                                     {
                                                         "command": "EVENT_SET_FALSE",
@@ -12594,8 +12794,8 @@
             "symbol": "sound_hammered_sav",
             "filename": "hammered.sav",
             "type": "fxhammer",
-            "inode": "55481624",
-            "_v": 1663459904723
+            "inode": "55484734",
+            "_v": 1663460672356
         }
     ],
     "fonts": [
@@ -12781,8 +12981,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 235,
-        "worldScrollY": 953,
+        "worldScrollX": 211,
+        "worldScrollY": 648,
         "zoom": 200,
         "customColorsEnabled": true,
         "sgbEnabled": false,
