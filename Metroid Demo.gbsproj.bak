@@ -15169,12 +15169,12 @@
                     "id": "a6d4138b-ee9d-45b4-9906-4c775c35f972"
                 },
                 {
-                    "command": "EVENT_GBVM_SCRIPT",
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
                     "args": {
-                        "script": "VM_IDLE",
+                        "customEventId": "b5a433c0-b713-49f7-80ab-4058bb84d338",
                         "__collapse": true
                     },
-                    "id": "47a85a84-642c-490a-9812-de8edf103695"
+                    "id": "6d6fbf32-d8dc-4086-979b-4ced1fdbc7e3"
                 },
                 {
                     "command": "EVENT_SOUND_PLAY_EFFECT",
@@ -15344,10 +15344,34 @@
                 {
                     "command": "EVENT_CALL_CUSTOM_EVENT",
                     "args": {
-                        "customEventId": "b5a433c0-b713-49f7-80ab-4058bb84d338",
+                        "customEventId": "3c016913-def7-41f1-9649-6c3c5ee8f542",
                         "__collapse": true
                     },
-                    "id": "6d6fbf32-d8dc-4086-979b-4ced1fdbc7e3"
+                    "id": "4f307cf1-2ccd-4299-a499-6acb656ad939"
+                },
+                {
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                    "args": {
+                        "customEventId": "3c016913-def7-41f1-9649-6c3c5ee8f542",
+                        "__collapse": true
+                    },
+                    "id": "79bbc2d5-4cb0-405c-8e1d-672a783eb874"
+                },
+                {
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                    "args": {
+                        "customEventId": "3c016913-def7-41f1-9649-6c3c5ee8f542",
+                        "__collapse": true
+                    },
+                    "id": "722a1f2a-3804-4833-8eb0-333c4c74ef88"
+                },
+                {
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                    "args": {
+                        "customEventId": "3c016913-def7-41f1-9649-6c3c5ee8f542",
+                        "__collapse": true
+                    },
+                    "id": "560f48cc-9929-4b92-b2ea-794c1d1326dd"
                 }
             ]
         },
@@ -15358,7 +15382,58 @@
             "variables": {},
             "actors": {},
             "symbol": "script_5",
-            "script": []
+            "script": [
+                {
+                    "command": "EVENT_PALETTE_SET_SPRITE",
+                    "args": {
+                        "palette0": "b48fbd9a-3102-42f5-a917-664783ed590c",
+                        "palette1": "keep",
+                        "palette2": "keep",
+                        "palette3": "keep",
+                        "palette4": "keep",
+                        "palette5": "keep",
+                        "palette6": "keep",
+                        "palette7": "keep",
+                        "__collapse": true
+                    },
+                    "id": "a569c4c6-bf23-478c-b8a1-fb8cc4d9e155"
+                },
+                {
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 0.5,
+                        "frames": 4,
+                        "units": "frames",
+                        "__collapse": true
+                    },
+                    "id": "32fa4556-cf4e-4986-acac-a79950375c1e"
+                },
+                {
+                    "command": "EVENT_PALETTE_SET_SPRITE",
+                    "args": {
+                        "palette0": "ff63a58c-e91b-42fd-ab58-9d65860de42c",
+                        "palette1": "keep",
+                        "palette2": "keep",
+                        "palette3": "keep",
+                        "palette4": "keep",
+                        "palette5": "keep",
+                        "palette6": "keep",
+                        "palette7": "keep",
+                        "__collapse": true
+                    },
+                    "id": "ce757099-5874-42cb-9328-6af312f2d67b"
+                },
+                {
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 0.5,
+                        "frames": 4,
+                        "units": "frames",
+                        "__collapse": true
+                    },
+                    "id": "f3f63e65-5260-4347-a360-b2311caba60e"
+                }
+            ]
         }
     ],
     "music": [

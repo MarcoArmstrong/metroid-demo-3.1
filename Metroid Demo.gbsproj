@@ -15185,8 +15185,8 @@
                         "frequency": 200,
                         "duration": 0.5,
                         "wait": true,
-                        "effect": 9,
-                        "__collapse": true
+                        "effect": 14,
+                        "__collapse": false
                     },
                     "id": "4099c193-e2f6-4394-ad11-93aeccf9829c"
                 },
@@ -15469,8 +15469,8 @@
             "symbol": "sound_hammered_sav",
             "filename": "hammered.sav",
             "type": "fxhammer",
-            "inode": "55484734",
-            "_v": 1663460672356
+            "inode": "55585931",
+            "_v": 1663530637664
         }
     ],
     "fonts": [
