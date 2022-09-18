@@ -2380,6 +2380,20 @@
                     "hit2Script": [],
                     "hit3Script": [
                         {
+                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                            "args": {
+                                "type": "f23fa70e-cb01-4d22-b631-32780170e1bd",
+                                "priority": "high",
+                                "pitch": 4,
+                                "frequency": 200,
+                                "duration": 0.5,
+                                "wait": true,
+                                "effect": 13,
+                                "__collapse": true
+                            },
+                            "id": "6e51090d-0d5e-4121-a8e3-1bd26dd14a9c"
+                        },
+                        {
                             "command": "EVENT_ACTOR_SET_STATE",
                             "args": {
                                 "actorId": "$self$",
@@ -2396,20 +2410,6 @@
                                 "__collapse": true
                             },
                             "id": "456a67a4-1b33-4471-816a-922c586b641d"
-                        },
-                        {
-                            "command": "EVENT_SOUND_PLAY_EFFECT",
-                            "args": {
-                                "type": "f23fa70e-cb01-4d22-b631-32780170e1bd",
-                                "priority": "high",
-                                "pitch": 4,
-                                "frequency": 200,
-                                "duration": 0.5,
-                                "wait": true,
-                                "effect": 13,
-                                "__collapse": true
-                            },
-                            "id": "6e51090d-0d5e-4121-a8e3-1bd26dd14a9c"
                         },
                         {
                             "command": "EVENT_SET_FLAGS",
@@ -5708,6 +5708,20 @@
                     "hit2Script": [],
                     "hit3Script": [
                         {
+                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                            "args": {
+                                "type": "f23fa70e-cb01-4d22-b631-32780170e1bd",
+                                "priority": "high",
+                                "pitch": 4,
+                                "frequency": 200,
+                                "duration": 0.5,
+                                "wait": true,
+                                "effect": 13,
+                                "__collapse": true
+                            },
+                            "id": "97dbe151-29cb-434f-82e5-f9e6cc5365a7"
+                        },
+                        {
                             "command": "EVENT_ACTOR_SET_STATE",
                             "args": {
                                 "actorId": "$self$",
@@ -5724,20 +5738,6 @@
                                 "__collapse": true
                             },
                             "id": "f90327d7-5e6d-4fcd-8396-6b50f431b272"
-                        },
-                        {
-                            "command": "EVENT_SOUND_PLAY_EFFECT",
-                            "args": {
-                                "type": "f23fa70e-cb01-4d22-b631-32780170e1bd",
-                                "priority": "high",
-                                "pitch": 4,
-                                "frequency": 200,
-                                "duration": 0.5,
-                                "wait": true,
-                                "effect": 13,
-                                "__collapse": true
-                            },
-                            "id": "97dbe151-29cb-434f-82e5-f9e6cc5365a7"
                         },
                         {
                             "command": "EVENT_SET_FLAGS",
@@ -12594,8 +12594,8 @@
             "symbol": "sound_hammered_sav",
             "filename": "hammered.sav",
             "type": "fxhammer",
-            "inode": "55477338",
-            "_v": 1663458900350
+            "inode": "55481015",
+            "_v": 1663459767587
         }
     ],
     "fonts": [

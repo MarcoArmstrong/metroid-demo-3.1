@@ -262,7 +262,7 @@ Area                                    Addr        Size        Decimal Bytes (A
      00000004  ___bank_bg_brinstar_01_tileset     bg_brinstar_01_tileset
      00000004  ___bank_bg_brinstar_02_tilemap     bg_brinstar_02_tilemap
      00000004  ___bank_bg_brinstar_02_tilemap_a   bg_brinstar_02_tilemap_attr
-     00000004  ___bank_scene_1_projectiles        scene_1_projectiles
+     00000004  ___bank_cursor_image               cursor_image
      00000004  ___bank_scene_2_collisions         scene_2_collisions
      00000004  ___bank_script_input_0             script_input_0
      00000004  ___bank_sound_hammered_sav_00      sound_hammered_sav
@@ -340,9 +340,9 @@ Area                                    Addr        Size        Decimal Bytes (A
      00000005  ___bank_palette_1                  palette_1
      00000005  ___bank_scene_1_actors             scene_1_actors
      00000005  ___bank_scene_1_init               scene_1_init
+     00000005  ___bank_scene_1_projectiles        scene_1_projectiles
      00000005  ___bank_scene_2_actors             scene_2_actors
      00000005  ___bank_scene_2_init               scene_2_init
-     00000005  ___bank_scene_2_projectiles        scene_2_projectiles
      00000005  ___bank_script_1                   script_1
      00000005  ___bank_script_engine_init         
      00000005  ___bank_script_input_2             script_input_2
@@ -446,11 +446,11 @@ Area                                    Addr        Size        Decimal Bytes (A
      00000006  ___bank_bg_brinstar_01             bg_brinstar_01
      00000006  ___bank_bg_brinstar_02             bg_brinstar_02
      00000006  ___bank_bootstrap_script           
-     00000006  ___bank_cursor_image               cursor_image
      00000006  ___bank_scene_1                    scene_1
      00000006  ___bank_scene_1_sprites            scene_1_sprites
      00000006  ___bank_scene_1_triggers           scene_1_triggers
      00000006  ___bank_scene_2                    scene_2
+     00000006  ___bank_scene_2_projectiles        scene_2_projectiles
      00000006  ___bank_scene_2_sprites            scene_2_sprites
      00000006  ___bank_scene_2_triggers           scene_2_triggers
      00000006  ___bank_script_2                   script_2
@@ -495,7 +495,7 @@ Area                                    Addr        Size        Decimal Bytes (A
      00000082  l__HEADER10                     
      000001CB  l__CRASH_SCRATCH2               
      00000200  s__CODE                         
-     000002C6  l__CODE_6                       
+     000002CD  l__CODE_6                       
      00000C4E  l__CODE                         
      00000E4E  s__HOME                         
      00001981  l__DATA                         
@@ -1432,7 +1432,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_6                             00064000    000002C6 =         710. bytes (REL,CON)
+_CODE_6                             00064000    000002CD =         717. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1448,31 +1448,31 @@ _CODE_6                             00064000    000002C6 =         710. bytes (R
      000640F0  _bg_brinstar_01                    bg_brinstar_01
      000640FE  ___func_bg_brinstar_02             bg_brinstar_02
      000640FE  _bg_brinstar_02                    bg_brinstar_02
-     0006410C  ___func_cursor_image               cursor_image
-     0006410C  _cursor_image                      cursor_image
-     0006411C  ___func_scene_1_sprites            scene_1_sprites
-     0006411C  _scene_1_sprites                   scene_1_sprites
-     00064125  ___func_scene_1_triggers           scene_1_triggers
-     00064125  _scene_1_triggers                  scene_1_triggers
-     00064135  ___func_scene_1                    scene_1
-     00064135  _scene_1                           scene_1
-     00064170  ___func_scene_2_sprites            scene_2_sprites
-     00064170  _scene_2_sprites                   scene_2_sprites
-     00064179  ___func_scene_2_triggers           scene_2_triggers
-     00064179  _scene_2_triggers                  scene_2_triggers
-     00064189  ___func_scene_2                    scene_2
-     00064189  _scene_2                           scene_2
-     000641C4  _script_2                          script_2
-     00064201  _script_input_3                    script_input_3
-     00064228  _script_input_4                    script_input_4
-     0006424F  ___func_sprite_player_update       sprite_player_update
-     0006424F  _sprite_player_update_metasprite   sprite_player_update
-     00064253  _sprite_player_update_metasprite   sprite_player_update
-     00064255  _sprite_player_update_animations   sprite_player_update
-     00064265  _sprite_player_update_animations   sprite_player_update
-     00064267  _sprite_player_update              sprite_player_update
-     0006427A  _trigger_0_interact                trigger_0_interact
-     000642A0  _trigger_1_interact                trigger_1_interact
+     0006410C  ___func_scene_1_sprites            scene_1_sprites
+     0006410C  _scene_1_sprites                   scene_1_sprites
+     00064115  ___func_scene_1_triggers           scene_1_triggers
+     00064115  _scene_1_triggers                  scene_1_triggers
+     00064125  ___func_scene_1                    scene_1
+     00064125  _scene_1                           scene_1
+     00064160  ___func_scene_2_projectiles        scene_2_projectiles
+     00064160  _scene_2_projectiles               scene_2_projectiles
+     00064177  ___func_scene_2_sprites            scene_2_sprites
+     00064177  _scene_2_sprites                   scene_2_sprites
+     00064180  ___func_scene_2_triggers           scene_2_triggers
+     00064180  _scene_2_triggers                  scene_2_triggers
+     00064190  ___func_scene_2                    scene_2
+     00064190  _scene_2                           scene_2
+     000641CB  _script_2                          script_2
+     00064208  _script_input_3                    script_input_3
+     0006422F  _script_input_4                    script_input_4
+     00064256  ___func_sprite_player_update       sprite_player_update
+     00064256  _sprite_player_update_metasprite   sprite_player_update
+     0006425A  _sprite_player_update_metasprite   sprite_player_update
+     0006425C  _sprite_player_update_animations   sprite_player_update
+     0006426C  _sprite_player_update_animations   sprite_player_update
+     0006426E  _sprite_player_update              sprite_player_update
+     00064281  _trigger_0_interact                trigger_0_interact
+     000642A7  _trigger_1_interact                trigger_1_interact
 
 ASxxxx Linker V03.00 + NoICE + sdld,  page 48.
 Hexadecimal  [32-Bits]
@@ -1707,11 +1707,11 @@ _CODE_5                             00054000    00003FFB =       16379. bytes (R
      00056B8E  ___func_scene_1_actors             scene_1_actors
      00056B8E  _scene_1_actors                    scene_1_actors
      00056C2A  _scene_1_init                      scene_1_init
-     00056C78  ___func_scene_2_actors             scene_2_actors
-     00056C78  _scene_2_actors                    scene_2_actors
-     00056D14  _scene_2_init                      scene_2_init
-     00056D5D  ___func_scene_2_projectiles        scene_2_projectiles
-     00056D5D  _scene_2_projectiles               scene_2_projectiles
+     00056C78  ___func_scene_1_projectiles        scene_1_projectiles
+     00056C78  _scene_1_projectiles               scene_1_projectiles
+     00056C8F  ___func_scene_2_actors             scene_2_actors
+     00056C8F  _scene_2_actors                    scene_2_actors
+     00056D2B  _scene_2_init                      scene_2_init
      00056D74  _script_1                          script_1
      00057142  _script_engine_init                
      0005718A  _script_input_2                    script_input_2
@@ -1863,20 +1863,20 @@ _CODE_4                             00044000    00003FFC =       16380. bytes (R
      0004568B  _bg_brinstar_02_tilemap_attr       bg_brinstar_02_tilemap_attr
      00045D3F  ___func_bg_brinstar_02_tilemap     bg_brinstar_02_tilemap
      00045D3F  _bg_brinstar_02_tilemap            bg_brinstar_02_tilemap
-     000463F3  ___func_scene_1_projectiles        scene_1_projectiles
-     000463F3  _scene_1_projectiles               scene_1_projectiles
-     0004640A  ___func_scene_2_collisions         scene_2_collisions
-     0004640A  _scene_2_collisions                scene_2_collisions
-     00046ABE  _script_input_0                    script_input_0
-     00046B76  ___func_sound_hammered_sav_00      sound_hammered_sav
-     00046B76  ___func_sound_hammered_sav_01      sound_hammered_sav
-     00046B76  ___func_sound_hammered_sav_02      sound_hammered_sav
-     00046B76  ___func_sound_hammered_sav_03      sound_hammered_sav
-     00046B76  ___func_sound_hammered_sav_04      sound_hammered_sav
-     00046B76  ___func_sound_hammered_sav_05      sound_hammered_sav
-     00046B76  ___func_sound_hammered_sav_06      sound_hammered_sav
-     00046B76  ___func_sound_hammered_sav_07      sound_hammered_sav
-     00046B76  ___func_sound_hammered_sav_08      sound_hammered_sav
+     000463F3  ___func_cursor_image               cursor_image
+     000463F3  _cursor_image                      cursor_image
+     00046403  ___func_scene_2_collisions         scene_2_collisions
+     00046403  _scene_2_collisions                scene_2_collisions
+     00046AB7  _script_input_0                    script_input_0
+     00046B6F  ___func_sound_hammered_sav_00      sound_hammered_sav
+     00046B6F  ___func_sound_hammered_sav_01      sound_hammered_sav
+     00046B6F  ___func_sound_hammered_sav_02      sound_hammered_sav
+     00046B6F  ___func_sound_hammered_sav_03      sound_hammered_sav
+     00046B6F  ___func_sound_hammered_sav_04      sound_hammered_sav
+     00046B6F  ___func_sound_hammered_sav_05      sound_hammered_sav
+     00046B6F  ___func_sound_hammered_sav_06      sound_hammered_sav
+     00046B6F  ___func_sound_hammered_sav_07      sound_hammered_sav
+     00046B6F  ___func_sound_hammered_sav_08      sound_hammered_sav
 ASxxxx Linker V03.00 + NoICE + sdld,  page 60.
 Hexadecimal  [32-Bits]
 
@@ -1886,25 +1886,25 @@ _CODE_4                             00044000    00003FFC =       16380. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00046B76  ___func_sound_hammered_sav_09      sound_hammered_sav
-     00046B76  ___func_sound_hammered_sav_10      sound_hammered_sav
-     00046B76  ___func_sound_hammered_sav_11      sound_hammered_sav
-     00046B76  ___func_sound_hammered_sav_12      sound_hammered_sav
-     00046B76  ___func_sound_hammered_sav_13      sound_hammered_sav
-     00046B76  _sound_hammered_sav_00             sound_hammered_sav
-     00046BF3  _sound_hammered_sav_01             sound_hammered_sav
-     00046C4F  _sound_hammered_sav_02             sound_hammered_sav
-     00046CB5  _sound_hammered_sav_03             sound_hammered_sav
-     00046D3C  _sound_hammered_sav_04             sound_hammered_sav
-     00046DAE  _sound_hammered_sav_05             sound_hammered_sav
-     00046E3F  _sound_hammered_sav_06             sound_hammered_sav
-     00046EE8  _sound_hammered_sav_07             sound_hammered_sav
-     00046F8D  _sound_hammered_sav_08             sound_hammered_sav
-     00047002  _sound_hammered_sav_09             sound_hammered_sav
-     00047073  _sound_hammered_sav_10             sound_hammered_sav
-     000470D1  _sound_hammered_sav_11             sound_hammered_sav
-     000470E0  _sound_hammered_sav_12             sound_hammered_sav
-     0004715C  _sound_hammered_sav_13             sound_hammered_sav
+     00046B6F  ___func_sound_hammered_sav_09      sound_hammered_sav
+     00046B6F  ___func_sound_hammered_sav_10      sound_hammered_sav
+     00046B6F  ___func_sound_hammered_sav_11      sound_hammered_sav
+     00046B6F  ___func_sound_hammered_sav_12      sound_hammered_sav
+     00046B6F  ___func_sound_hammered_sav_13      sound_hammered_sav
+     00046B6F  _sound_hammered_sav_00             sound_hammered_sav
+     00046BEC  _sound_hammered_sav_01             sound_hammered_sav
+     00046C48  _sound_hammered_sav_02             sound_hammered_sav
+     00046CAE  _sound_hammered_sav_03             sound_hammered_sav
+     00046D35  _sound_hammered_sav_04             sound_hammered_sav
+     00046DA7  _sound_hammered_sav_05             sound_hammered_sav
+     00046E38  _sound_hammered_sav_06             sound_hammered_sav
+     00046EE1  _sound_hammered_sav_07             sound_hammered_sav
+     00046F86  _sound_hammered_sav_08             sound_hammered_sav
+     00046FFB  _sound_hammered_sav_09             sound_hammered_sav
+     0004706C  _sound_hammered_sav_10             sound_hammered_sav
+     000470CA  _sound_hammered_sav_11             sound_hammered_sav
+     000470D9  _sound_hammered_sav_12             sound_hammered_sav
+     00047155  _sound_hammered_sav_13             sound_hammered_sav
      000471DA  _shmup_init                        shmup
      00047276  _shmup_update                      shmup
      000478F5  _topdown_init                      topdown

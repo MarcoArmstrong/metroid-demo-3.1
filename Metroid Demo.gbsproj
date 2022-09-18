@@ -2383,13 +2383,13 @@
                             "command": "EVENT_SOUND_PLAY_EFFECT",
                             "args": {
                                 "type": "f23fa70e-cb01-4d22-b631-32780170e1bd",
-                                "priority": "high",
+                                "priority": "medium",
                                 "pitch": 4,
                                 "frequency": 200,
                                 "duration": 0.5,
                                 "wait": true,
                                 "effect": 13,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "id": "6e51090d-0d5e-4121-a8e3-1bd26dd14a9c"
                         },
@@ -5711,13 +5711,13 @@
                             "command": "EVENT_SOUND_PLAY_EFFECT",
                             "args": {
                                 "type": "f23fa70e-cb01-4d22-b631-32780170e1bd",
-                                "priority": "high",
+                                "priority": "medium",
                                 "pitch": 4,
                                 "frequency": 200,
                                 "duration": 0.5,
                                 "wait": true,
                                 "effect": 13,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "id": "97dbe151-29cb-434f-82e5-f9e6cc5365a7"
                         },
@@ -12594,8 +12594,8 @@
             "symbol": "sound_hammered_sav",
             "filename": "hammered.sav",
             "type": "fxhammer",
-            "inode": "55481015",
-            "_v": 1663459767587
+            "inode": "55481624",
+            "_v": 1663459904723
         }
     ],
     "fonts": [
