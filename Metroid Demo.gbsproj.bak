@@ -15708,16 +15708,6 @@
                                             "id": "dd1cf8ed-b746-4403-9c6d-cdac14be78e2"
                                         },
                                         {
-                                            "command": "EVENT_ACTOR_SET_STATE",
-                                            "args": {
-                                                "actorId": "$self$",
-                                                "spriteStateId": "playerCrouch",
-                                                "__collapse": true,
-                                                "__comment": true
-                                            },
-                                            "id": "72779d8c-dd52-4ec3-8820-396e07af1874"
-                                        },
-                                        {
                                             "command": "EVENT_CALL_CUSTOM_EVENT",
                                             "args": {
                                                 "customEventId": "3c016913-def7-41f1-9649-6c3c5ee8f542",

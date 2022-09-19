@@ -3664,8 +3664,6 @@
                             "command": "EVENT_REMOVE_INPUT_SCRIPT",
                             "args": {
                                 "input": [
-                                    "b",
-                                    "a",
                                     "left",
                                     "up",
                                     "down",
