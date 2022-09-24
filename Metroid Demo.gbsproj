@@ -2501,7 +2501,7 @@
                             "args": {
                                 "script": "VM_IDLE",
                                 "__collapse": true,
-                                "__comment": false
+                                "__comment": true
                             },
                             "id": "5efb75f6-ec53-4dda-8371-356e779a4f3a"
                         },
@@ -2510,7 +2510,8 @@
                             "args": {
                                 "field": "grounded",
                                 "variable": "3",
-                                "__collapse": true
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "id": "02b31da9-3e18-497d-b3cf-367a07bb67a8"
                         },
@@ -2521,7 +2522,7 @@
                                 "__collapseElse": true,
                                 "__disableElse": true,
                                 "__collapse": true,
-                                "__comment": false
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -2588,7 +2589,8 @@
                                 "variable": "6",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": true
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -2678,7 +2680,8 @@
                                 "variable": "6",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -2815,7 +2818,8 @@
                                 "variable": "5",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -2917,8 +2921,8 @@
                                 "variable": "5",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__comment": false,
-                                "__collapse": false
+                                "__comment": true,
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -3000,8 +3004,8 @@
                                 "variable": "9",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false,
-                                "__comment": false
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -3046,8 +3050,8 @@
                                 "variable": "11",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__comment": false,
-                                "__collapse": false
+                                "__comment": true,
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -3269,7 +3273,7 @@
                                     {
                                         "command": "EVENT_GBVM_SCRIPT",
                                         "args": {
-                                            "script": "VM_IDLE\nVM_IDLE",
+                                            "script": "VM_IDLE",
                                             "__collapse": true
                                         },
                                         "id": "554f4158-2059-4b5a-b09c-9002c8fc9dfb"
@@ -3295,7 +3299,7 @@
                                     {
                                         "command": "EVENT_GBVM_SCRIPT",
                                         "args": {
-                                            "script": "VM_IDLE\nVM_IDLE",
+                                            "script": "VM_IDLE",
                                             "__collapse": true
                                         },
                                         "id": "53d6541b-eb89-41c0-b5fa-f5134733f95e"
@@ -3321,7 +3325,7 @@
                                     {
                                         "command": "EVENT_GBVM_SCRIPT",
                                         "args": {
-                                            "script": "VM_IDLE\nVM_IDLE",
+                                            "script": "VM_IDLE",
                                             "__collapse": true
                                         },
                                         "id": "9aa36852-2006-4677-a892-774368b50e4a"
@@ -3627,7 +3631,7 @@
                                 "variable": "L0",
                                 "__collapseElse": false,
                                 "__disableElse": true,
-                                "__collapse": true,
+                                "__collapse": false,
                                 "__comment": false
                             },
                             "children": {
@@ -4230,6 +4234,13 @@
                         "__collapse": true
                     },
                     "id": "0b58188a-a505-4689-8b29-8be43692f8ac"
+                },
+                {
+                    "command": "EVENT_SET_TRUE",
+                    "args": {
+                        "variable": "18"
+                    },
+                    "id": "515c8e03-8c33-400f-9f14-88d61fff9075"
                 }
             ],
             "playerHit1Script": [],
@@ -5989,7 +6000,7 @@
                             "args": {
                                 "script": "VM_IDLE",
                                 "__collapse": true,
-                                "__comment": false
+                                "__comment": true
                             },
                             "id": "1a795f9e-03a6-45fe-bd7f-974484c725aa"
                         },
@@ -5998,7 +6009,8 @@
                             "args": {
                                 "field": "grounded",
                                 "variable": "3",
-                                "__collapse": true
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "id": "d4c9ab84-2f71-49f0-bd54-37d41716055d"
                         },
@@ -6009,7 +6021,7 @@
                                 "__collapseElse": true,
                                 "__disableElse": true,
                                 "__collapse": true,
-                                "__comment": false
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -6076,7 +6088,8 @@
                                 "variable": "6",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": true
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -6166,7 +6179,8 @@
                                 "variable": "6",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -6303,7 +6317,8 @@
                                 "variable": "5",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -6405,8 +6420,8 @@
                                 "variable": "5",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__comment": false,
-                                "__collapse": false
+                                "__comment": true,
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -6488,8 +6503,8 @@
                                 "variable": "9",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false,
-                                "__comment": false
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -6534,8 +6549,8 @@
                                 "variable": "11",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__comment": false,
-                                "__collapse": false
+                                "__comment": true,
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -6763,7 +6778,7 @@
                     "animSpeed": 7,
                     "paletteId": "",
                     "isPinned": false,
-                    "persistent": false,
+                    "persistent": true,
                     "collisionGroup": "1",
                     "symbol": "actor_8",
                     "script": [
@@ -7154,7 +7169,7 @@
                     "animSpeed": 7,
                     "paletteId": "",
                     "isPinned": false,
-                    "persistent": false,
+                    "persistent": true,
                     "collisionGroup": "1",
                     "symbol": "actor_10",
                     "script": [
@@ -7664,7 +7679,7 @@
                     "animSpeed": 7,
                     "paletteId": "",
                     "isPinned": false,
-                    "persistent": false,
+                    "persistent": true,
                     "collisionGroup": "1",
                     "symbol": "actor_9",
                     "script": [
@@ -13984,7 +13999,7 @@
                             "args": {
                                 "script": "VM_IDLE",
                                 "__collapse": true,
-                                "__comment": false
+                                "__comment": true
                             },
                             "id": "c29c9560-1c7a-4782-93c0-3eb0893eaafd"
                         },
@@ -13993,7 +14008,8 @@
                             "args": {
                                 "field": "grounded",
                                 "variable": "3",
-                                "__collapse": true
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "id": "c4bfb162-456d-4bde-9ac9-3f87234ccde7"
                         },
@@ -14004,7 +14020,7 @@
                                 "__collapseElse": true,
                                 "__disableElse": true,
                                 "__collapse": true,
-                                "__comment": false
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -14071,7 +14087,8 @@
                                 "variable": "6",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": true
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -14161,7 +14178,8 @@
                                 "variable": "6",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -14298,7 +14316,8 @@
                                 "variable": "5",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -14400,8 +14419,8 @@
                                 "variable": "5",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__comment": false,
-                                "__collapse": false
+                                "__comment": true,
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -14483,8 +14502,8 @@
                                 "variable": "9",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__collapse": false,
-                                "__comment": false
+                                "__collapse": true,
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -14529,8 +14548,8 @@
                                 "variable": "11",
                                 "__collapseElse": true,
                                 "__disableElse": true,
-                                "__comment": false,
-                                "__collapse": false
+                                "__comment": true,
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -33933,6 +33952,11 @@
             "symbol": "var_playercantgetup"
         },
         {
+            "id": "18",
+            "name": "playerHasMorphBall",
+            "symbol": "var_playerhasmorphball"
+        },
+        {
             "id": "cbcb1ce3-5456-4467-ab46-5729ad4499c2__L0",
             "name": "Dead",
             "symbol": "var_dead"
@@ -33983,11 +34007,6 @@
             "symbol": "var_hp_3"
         },
         {
-            "id": "18",
-            "name": "playerHasMorphBall",
-            "symbol": "var_playerhasmorphball"
-        },
-        {
             "id": "fb03b85f-d401-4d22-aa4a-199b62a98d53__L0",
             "name": "Dead",
             "symbol": "var_dead_4"
@@ -34021,8 +34040,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": "selected",
-        "worldScrollX": 310,
-        "worldScrollY": 830,
+        "worldScrollX": 1931,
+        "worldScrollY": 258,
         "zoom": 200,
         "customColorsEnabled": true,
         "sgbEnabled": false,
