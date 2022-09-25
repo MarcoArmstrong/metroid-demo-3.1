@@ -3539,6 +3539,14 @@
                                 "variable": "7"
                             },
                             "id": "5df6c8a0-4ebe-4595-a7da-be7ef971dc79"
+                        },
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "8",
+                                "__collapse": true
+                            },
+                            "id": "f600df1b-e45c-425a-a226-fa06af1fe294"
                         }
                     ]
                 }
@@ -13248,6 +13256,13 @@
                                 "variable": "7"
                             },
                             "id": "9491ea87-ee01-46ec-8e08-4cf92f8a39f9"
+                        },
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "8"
+                            },
+                            "id": "dbcbda38-f772-4b2e-adb5-7b3048bfebae"
                         }
                     ]
                 },
@@ -13548,6 +13563,13 @@
                                 "variable": "7"
                             },
                             "id": "3c15835b-cc1c-4f87-85e9-826ff9dab6ad"
+                        },
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "8"
+                            },
+                            "id": "fafadb8c-baeb-4b60-9269-4536eb033364"
                         }
                     ]
                 },
@@ -36231,8 +36253,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": "selected",
-        "worldScrollX": 236,
-        "worldScrollY": 1138,
+        "worldScrollX": 2192,
+        "worldScrollY": 1159,
         "zoom": 200,
         "customColorsEnabled": true,
         "sgbEnabled": false,
