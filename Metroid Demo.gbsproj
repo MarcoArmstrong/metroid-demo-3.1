@@ -3532,6 +3532,13 @@
                                 "true": []
                             },
                             "id": "d8083f47-8b37-49b6-82c1-c762b6249f30"
+                        },
+                        {
+                            "command": "EVENT_SET_FALSE",
+                            "args": {
+                                "variable": "7"
+                            },
+                            "id": "5df6c8a0-4ebe-4595-a7da-be7ef971dc79"
                         }
                     ]
                 }
@@ -13234,6 +13241,13 @@
                                 "true": []
                             },
                             "id": "bbcb48ea-8aa7-4678-b9f3-41de7122e9e6"
+                        },
+                        {
+                            "command": "EVENT_SET_FALSE",
+                            "args": {
+                                "variable": "7"
+                            },
+                            "id": "9491ea87-ee01-46ec-8e08-4cf92f8a39f9"
                         }
                     ]
                 },
@@ -13527,6 +13541,13 @@
                                 "true": []
                             },
                             "id": "fbeaac55-27ce-482b-91dd-f58e8eb88dfe"
+                        },
+                        {
+                            "command": "EVENT_SET_FALSE",
+                            "args": {
+                                "variable": "7"
+                            },
+                            "id": "3c15835b-cc1c-4f87-85e9-826ff9dab6ad"
                         }
                     ]
                 },
@@ -36210,8 +36231,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": "selected",
-        "worldScrollX": 1582,
-        "worldScrollY": 809,
+        "worldScrollX": 236,
+        "worldScrollY": 1138,
         "zoom": 200,
         "customColorsEnabled": true,
         "sgbEnabled": false,

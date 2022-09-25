@@ -31561,7 +31561,8 @@
                                             "args": {
                                                 "variable": "5",
                                                 "__collapseElse": true,
-                                                "__disableElse": true
+                                                "__disableElse": true,
+                                                "__collapse": true
                                             },
                                             "children": {
                                                 "true": [
@@ -35530,7 +35531,8 @@
                                                                 "up"
                                                             ],
                                                             "__collapseElse": true,
-                                                            "__disableElse": true
+                                                            "__disableElse": true,
+                                                            "__collapse": true
                                                         },
                                                         "children": {
                                                             "true": [
@@ -35597,6 +35599,126 @@
                                                             "false": []
                                                         },
                                                         "id": "cadc20cd-f7b0-4c05-96b9-586de97a1c34"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_INPUT",
+                                                        "args": {
+                                                            "input": [
+                                                                "down"
+                                                            ],
+                                                            "__collapseElse": true,
+                                                            "__disableElse": true,
+                                                            "__collapse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                                    "args": {
+                                                                        "script": "VM_IDLE"
+                                                                    },
+                                                                    "id": "3b36147a-3a63-4835-80f2-f65d0e8a300f"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_IF_FALSE",
+                                                                    "args": {
+                                                                        "variable": "6",
+                                                                        "__collapseElse": true,
+                                                                        "__disableElse": true
+                                                                    },
+                                                                    "children": {
+                                                                        "true": [
+                                                                            {
+                                                                                "command": "EVENT_GBVM_SCRIPT",
+                                                                                "args": {
+                                                                                    "script": "VM_IDLE"
+                                                                                },
+                                                                                "id": "7a21e483-9c19-415f-83a4-fb03bef69868"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_IF_INPUT",
+                                                                                "args": {
+                                                                                    "input": [
+                                                                                        "left",
+                                                                                        "right"
+                                                                                    ],
+                                                                                    "__collapseElse": false
+                                                                                },
+                                                                                "children": {
+                                                                                    "true": [],
+                                                                                    "false": [
+                                                                                        {
+                                                                                            "command": "EVENT_GBVM_SCRIPT",
+                                                                                            "args": {
+                                                                                                "script": "VM_IDLE",
+                                                                                                "__collapse": false
+                                                                                            },
+                                                                                            "id": "0f6e0cb8-a894-42dd-801a-5d5919613ad7"
+                                                                                        },
+                                                                                        {
+                                                                                            "command": "EVENT_ACTOR_SET_STATE",
+                                                                                            "args": {
+                                                                                                "actorId": "player",
+                                                                                                "spriteStateId": "playerCrouch"
+                                                                                            },
+                                                                                            "id": "d1976e39-f64e-4215-8e70-ea8ab5fe2d2f"
+                                                                                        },
+                                                                                        {
+                                                                                            "command": "EVENT_SET_FALSE",
+                                                                                            "args": {
+                                                                                                "variable": "7"
+                                                                                            },
+                                                                                            "id": "861c0093-9a10-4fb6-a34c-3a8742dbabc9"
+                                                                                        },
+                                                                                        {
+                                                                                            "command": "EVENT_SET_FALSE",
+                                                                                            "args": {
+                                                                                                "variable": "6"
+                                                                                            },
+                                                                                            "id": "94903f9a-4d0c-42fb-8c41-540761fe2575"
+                                                                                        },
+                                                                                        {
+                                                                                            "command": "EVENT_SET_FALSE",
+                                                                                            "args": {
+                                                                                                "variable": "9"
+                                                                                            },
+                                                                                            "id": "5c8ae5ed-3393-40c0-8055-c5e1db5a37ef"
+                                                                                        },
+                                                                                        {
+                                                                                            "command": "EVENT_SET_FALSE",
+                                                                                            "args": {
+                                                                                                "variable": "8"
+                                                                                            },
+                                                                                            "id": "89fe75fb-d4ba-4e42-9017-29f169ea2194"
+                                                                                        },
+                                                                                        {
+                                                                                            "command": "EVENT_GBVM_SCRIPT",
+                                                                                            "args": {
+                                                                                                "script": "VM_IDLE",
+                                                                                                "__collapse": false
+                                                                                            },
+                                                                                            "id": "45fa189c-fd82-435e-bd01-6dc45aa031fe"
+                                                                                        },
+                                                                                        {
+                                                                                            "command": "EVENT_SET_TRUE",
+                                                                                            "args": {
+                                                                                                "variable": "5"
+                                                                                            },
+                                                                                            "id": "2a837ee2-378c-437c-a021-b6ee02cefbfd"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                "id": "9f9e8ae6-bb0f-4c9e-8bdd-ee2950363371"
+                                                                            }
+                                                                        ],
+                                                                        "false": []
+                                                                    },
+                                                                    "id": "17a0cbeb-891c-4db1-8999-045344749f68"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "5437d825-9106-4a79-b9c2-099d80df2f23"
                                                     }
                                                 ],
                                                 "false": []
