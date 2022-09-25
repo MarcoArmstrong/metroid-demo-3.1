@@ -617,7 +617,7 @@ Area                                    Addr        Size        Decimal Bytes (A
      00000E51  s__HOME                         
      00001981  l__DATA                         
      00002000  _rROMB0                            
-     00002922  l__CODE_8                       
+     00002940  l__CODE_8                       
      00002C81  l__HOME                         
      00003000  _rROMB1                            
      00003AD2  s__BASE                         
@@ -1523,7 +1523,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_8                             00084000    00002922 =       10530. bytes (REL,CON)
+_CODE_8                             00084000    00002940 =       10560. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1582,7 +1582,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_8                             00084000    00002922 =       10530. bytes (REL,CON)
+_CODE_8                             00084000    00002940 =       10560. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1642,7 +1642,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_8                             00084000    00002922 =       10530. bytes (REL,CON)
+_CODE_8                             00084000    00002940 =       10560. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1702,7 +1702,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_8                             00084000    00002922 =       10530. bytes (REL,CON)
+_CODE_8                             00084000    00002940 =       10560. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1762,7 +1762,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_8                             00084000    00002922 =       10530. bytes (REL,CON)
+_CODE_8                             00084000    00002940 =       10560. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -1773,19 +1773,19 @@ _CODE_8                             00084000    00002922 =       10530. bytes (R
      000864BF  _trigger_0_interact                trigger_0_interact
      000864E5  _trigger_1_interact                trigger_1_interact
      0008650B  _trigger_11_interact               trigger_11_interact
-     00086549  _trigger_12_interact               trigger_12_interact
-     0008656F  _trigger_13_interact               trigger_13_interact
-     000865D6  _trigger_14_interact               trigger_14_interact
-     000865FC  _trigger_15_interact               trigger_15_interact
-     00086663  _trigger_16_interact               trigger_16_interact
-     000866BE  _trigger_2_interact                trigger_2_interact
-     00086725  _trigger_3_interact                trigger_3_interact
-     0008678C  _trigger_4_interact                trigger_4_interact
-     000867CA  _trigger_5_interact                trigger_5_interact
-     000867F0  _trigger_6_interact                trigger_6_interact
-     00086857  _trigger_7_interact                trigger_7_interact
-     00086895  _trigger_8_interact                trigger_8_interact
-     000868BB  _trigger_9_interact                trigger_9_interact
+     00086553  _trigger_12_interact               trigger_12_interact
+     00086579  _trigger_13_interact               trigger_13_interact
+     000865E0  _trigger_14_interact               trigger_14_interact
+     00086606  _trigger_15_interact               trigger_15_interact
+     0008666D  _trigger_16_interact               trigger_16_interact
+     000866C8  _trigger_2_interact                trigger_2_interact
+     0008672F  _trigger_3_interact                trigger_3_interact
+     00086796  _trigger_4_interact                trigger_4_interact
+     000867DE  _trigger_5_interact                trigger_5_interact
+     00086804  _trigger_6_interact                trigger_6_interact
+     0008686B  _trigger_7_interact                trigger_7_interact
+     000868B3  _trigger_8_interact                trigger_8_interact
+     000868D9  _trigger_9_interact                trigger_9_interact
 
 ASxxxx Linker V03.00 + NoICE + sdld,  page 53.
 Hexadecimal  [32-Bits]
