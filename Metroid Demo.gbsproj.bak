@@ -13411,7 +13411,7 @@
                                     {
                                         "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                         "args": {
-                                            "__scriptTabs": "layout",
+                                            "__scriptTabs": "text",
                                             "minHeight": 3,
                                             "maxHeight": 3,
                                             "position": "bottom",
@@ -14470,6 +14470,47 @@
                                 ]
                             },
                             "id": "e452c933-c616-4b39-b768-4c9ffaddad8d"
+                        }
+                    ]
+                },
+                {
+                    "name": "",
+                    "id": "1d474e73-4363-437c-afdb-36f5d2e2bd13",
+                    "x": 7,
+                    "y": 13,
+                    "symbol": "trigger_16",
+                    "width": 4,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "minHeight": 3,
+                                "maxHeight": 3,
+                                "position": "bottom",
+                                "showBorder": "true",
+                                "clearPrevious": true,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 3,
+                                "closeWhen": "notModal",
+                                "closeButton": "a",
+                                "text": [
+                                    "!F:b3f25d09-bc9f-4cca-9779-d4fb2ccac772!GHI!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47! Save progress"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "85eb6a6d-f151-42df-ba1d-6ea4f817fd7d"
+                        }
+                    ],
+                    "leaveScript": [
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "b5a433c0-b713-49f7-80ab-4058bb84d338"
+                            },
+                            "id": "0cfae40c-9a06-4ad9-9dd7-55f944ae8c96"
                         }
                     ]
                 }
@@ -31553,13 +31594,6 @@
                                                                     "id": "45836daa-f5cd-4949-9396-509524946f82"
                                                                 },
                                                                 {
-                                                                    "command": "EVENT_SET_TRUE",
-                                                                    "args": {
-                                                                        "variable": "8"
-                                                                    },
-                                                                    "id": "c69be297-5382-42fa-8c50-641488a31218"
-                                                                },
-                                                                {
                                                                     "command": "EVENT_SET_FALSE",
                                                                     "args": {
                                                                         "variable": "5"
@@ -31586,6 +31620,13 @@
                                                                         "variable": "9"
                                                                     },
                                                                     "id": "93b6720c-43b9-4454-84bb-f7381ccb7fc9"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_SET_TRUE",
+                                                                    "args": {
+                                                                        "variable": "8"
+                                                                    },
+                                                                    "id": "c69be297-5382-42fa-8c50-641488a31218"
                                                                 },
                                                                 {
                                                                     "command": "EVENT_SET_INPUT_SCRIPT",
@@ -31652,13 +31693,6 @@
                                                                     "id": "8b1dfea7-92a8-4bae-856c-a188f5ea5dfc"
                                                                 },
                                                                 {
-                                                                    "command": "EVENT_SET_TRUE",
-                                                                    "args": {
-                                                                        "variable": "5"
-                                                                    },
-                                                                    "id": "b736518e-c9d0-4269-8ec1-edb96cb0de09"
-                                                                },
-                                                                {
                                                                     "command": "EVENT_SET_FALSE",
                                                                     "args": {
                                                                         "variable": "7"
@@ -31685,6 +31719,13 @@
                                                                         "variable": "8"
                                                                     },
                                                                     "id": "52f5af2e-d827-419d-a39a-3b07d965783a"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_SET_TRUE",
+                                                                    "args": {
+                                                                        "variable": "5"
+                                                                    },
+                                                                    "id": "b736518e-c9d0-4269-8ec1-edb96cb0de09"
                                                                 }
                                                             ]
                                                         },
@@ -31726,13 +31767,6 @@
                                                         "id": "494fd17d-0a35-4038-8eae-560caec63947"
                                                     },
                                                     {
-                                                        "command": "EVENT_SET_TRUE",
-                                                        "args": {
-                                                            "variable": "6"
-                                                        },
-                                                        "id": "fd289c8e-fae5-4aab-9d70-a55d3e1f37de"
-                                                    },
-                                                    {
                                                         "command": "EVENT_SET_FALSE",
                                                         "args": {
                                                             "variable": "5"
@@ -31759,6 +31793,13 @@
                                                             "variable": "8"
                                                         },
                                                         "id": "121f5217-48e1-47eb-942d-07798bb49d45"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_TRUE",
+                                                        "args": {
+                                                            "variable": "6"
+                                                        },
+                                                        "id": "fd289c8e-fae5-4aab-9d70-a55d3e1f37de"
                                                     }
                                                 ],
                                                 "false": []
@@ -31821,18 +31862,39 @@
                                                                     "id": "127f8226-0bb9-4f9f-81c7-d729b2361d16"
                                                                 },
                                                                 {
-                                                                    "command": "EVENT_SET_TRUE",
-                                                                    "args": {
-                                                                        "variable": "9"
-                                                                    },
-                                                                    "id": "609bd258-868e-4b9c-98b7-f5ff0c6c7c82"
-                                                                },
-                                                                {
                                                                     "command": "EVENT_SET_FALSE",
                                                                     "args": {
                                                                         "variable": "7"
                                                                     },
                                                                     "id": "5911ed9d-c66a-4103-96d2-1b74bd324166"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_SET_FALSE",
+                                                                    "args": {
+                                                                        "variable": "5"
+                                                                    },
+                                                                    "id": "ae2fb4e0-fb97-4311-8346-563997c4c513"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_SET_FALSE",
+                                                                    "args": {
+                                                                        "variable": "6"
+                                                                    },
+                                                                    "id": "194d886d-f0cd-4a28-a7b9-ad86b215059b"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_SET_FALSE",
+                                                                    "args": {
+                                                                        "variable": "8"
+                                                                    },
+                                                                    "id": "a2859ccc-ee62-458a-a11c-0668e0bf945a"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_SET_TRUE",
+                                                                    "args": {
+                                                                        "variable": "9"
+                                                                    },
+                                                                    "id": "609bd258-868e-4b9c-98b7-f5ff0c6c7c82"
                                                                 }
                                                             ],
                                                             "false": []
@@ -31878,13 +31940,6 @@
                                             "id": "4a3039a6-f2bc-4dc3-a645-14842ee2453b"
                                         },
                                         {
-                                            "command": "EVENT_SET_TRUE",
-                                            "args": {
-                                                "variable": "7"
-                                            },
-                                            "id": "256e7eba-419e-4150-9a20-a5f668ee0271"
-                                        },
-                                        {
                                             "command": "EVENT_SET_FALSE",
                                             "args": {
                                                 "variable": "5"
@@ -31911,6 +31966,13 @@
                                                 "variable": "8"
                                             },
                                             "id": "d295c136-790e-4a07-beb6-923487572cd9"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_TRUE",
+                                            "args": {
+                                                "variable": "7"
+                                            },
+                                            "id": "256e7eba-419e-4150-9a20-a5f668ee0271"
                                         }
                                     ],
                                     "false": []
@@ -31946,13 +32008,6 @@
                                             "id": "c1213edd-769c-426a-bbe9-ab887428b62f"
                                         },
                                         {
-                                            "command": "EVENT_SET_TRUE",
-                                            "args": {
-                                                "variable": "5"
-                                            },
-                                            "id": "d514909d-1e49-4c7c-9b39-0432596e5452"
-                                        },
-                                        {
                                             "command": "EVENT_SET_FALSE",
                                             "args": {
                                                 "variable": "8"
@@ -31972,6 +32027,20 @@
                                                 "variable": "9"
                                             },
                                             "id": "131279cb-bd9b-4ed6-9c5d-65c50c9a09d1"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_FALSE",
+                                            "args": {
+                                                "variable": "6"
+                                            },
+                                            "id": "ff4cfbaa-80b1-4952-a2d0-46e3e2cb3659"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_TRUE",
+                                            "args": {
+                                                "variable": "5"
+                                            },
+                                            "id": "d514909d-1e49-4c7c-9b39-0432596e5452"
                                         },
                                         {
                                             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -31997,7 +32066,7 @@
                         ],
                         "override": false,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -32041,18 +32110,18 @@
                                             "id": "7fdf7da2-62ed-4cab-bf9b-d4d85f87bbfe"
                                         },
                                         {
-                                            "command": "EVENT_SET_TRUE",
-                                            "args": {
-                                                "variable": "7"
-                                            },
-                                            "id": "dc857709-15db-4a1a-8886-8e5d8b4bac49"
-                                        },
-                                        {
                                             "command": "EVENT_SET_FALSE",
                                             "args": {
                                                 "variable": "5"
                                             },
                                             "id": "c8ad4988-4f7e-4192-ac10-c9ff2d1b4d2c"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_TRUE",
+                                            "args": {
+                                                "variable": "7"
+                                            },
+                                            "id": "dc857709-15db-4a1a-8886-8e5d8b4bac49"
                                         }
                                     ],
                                     "false": []
@@ -32071,7 +32140,7 @@
                         ],
                         "override": false,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -32115,18 +32184,18 @@
                                             "id": "85497c28-7a8e-4a69-9dc6-ea7be80bc9b5"
                                         },
                                         {
-                                            "command": "EVENT_SET_TRUE",
-                                            "args": {
-                                                "variable": "7"
-                                            },
-                                            "id": "eef84f98-3f27-43b9-adeb-8aa24851b3b9"
-                                        },
-                                        {
                                             "command": "EVENT_SET_FALSE",
                                             "args": {
                                                 "variable": "5"
                                             },
                                             "id": "36d96c74-9208-4c2a-aa54-ca7cfc68f2df"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_TRUE",
+                                            "args": {
+                                                "variable": "7"
+                                            },
+                                            "id": "eef84f98-3f27-43b9-adeb-8aa24851b3b9"
                                         }
                                     ],
                                     "false": []
@@ -32145,7 +32214,7 @@
                         ],
                         "override": false,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -32312,18 +32381,18 @@
                                                         "id": "e840a18c-ed88-4692-a2ce-7a54ddbc30bd"
                                                     },
                                                     {
-                                                        "command": "EVENT_SET_TRUE",
-                                                        "args": {
-                                                            "variable": "7"
-                                                        },
-                                                        "id": "7cb9a893-ff59-4fcc-a62a-b63284af5d2c"
-                                                    },
-                                                    {
                                                         "command": "EVENT_SET_FALSE",
                                                         "args": {
                                                             "variable": "5"
                                                         },
                                                         "id": "89a00c22-caf7-41a8-b230-76639b4496db"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_TRUE",
+                                                        "args": {
+                                                            "variable": "7"
+                                                        },
+                                                        "id": "7cb9a893-ff59-4fcc-a62a-b63284af5d2c"
                                                     }
                                                 ],
                                                 "false": []
@@ -34778,19 +34847,20 @@
                                             "children": {
                                                 "true": [
                                                     {
+                                                        "command": "EVENT_GBVM_SCRIPT",
+                                                        "args": {
+                                                            "script": "VM_IDLE",
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "10ef56d6-242c-4a3a-bfab-5d5ca39dc634"
+                                                    },
+                                                    {
                                                         "command": "EVENT_ACTOR_SET_STATE",
                                                         "args": {
                                                             "actorId": "player",
                                                             "spriteStateId": "playerAimDown"
                                                         },
                                                         "id": "6ac13c4a-5558-4cbd-b5d5-f10db6e28e54"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_SET_TRUE",
-                                                        "args": {
-                                                            "variable": "6"
-                                                        },
-                                                        "id": "91365108-2522-45bb-9363-493e671b8b61"
                                                     },
                                                     {
                                                         "command": "EVENT_SET_FALSE",
@@ -34812,6 +34882,28 @@
                                                             "variable": "9"
                                                         },
                                                         "id": "cd76a902-f130-4c12-ba87-0b1efea8b2e2"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_FALSE",
+                                                        "args": {
+                                                            "variable": "8"
+                                                        },
+                                                        "id": "5e722031-c336-4afd-901a-1102625fdb97"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_GBVM_SCRIPT",
+                                                        "args": {
+                                                            "script": "VM_IDLE",
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "cdead091-19f1-455f-9fbe-30e2c2f4af95"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_TRUE",
+                                                        "args": {
+                                                            "variable": "6"
+                                                        },
+                                                        "id": "91365108-2522-45bb-9363-493e671b8b61"
                                                     }
                                                 ],
                                                 "false": []
@@ -34884,13 +34976,6 @@
                                                         "id": "1f9e02aa-9ac2-4422-8bf2-837a44153f47"
                                                     },
                                                     {
-                                                        "command": "EVENT_SET_TRUE",
-                                                        "args": {
-                                                            "variable": "7"
-                                                        },
-                                                        "id": "2a643fff-f40d-48a1-8982-db066987dcbe"
-                                                    },
-                                                    {
                                                         "command": "EVENT_SET_FALSE",
                                                         "args": {
                                                             "variable": "6"
@@ -34917,6 +35002,13 @@
                                                             "variable": "8"
                                                         },
                                                         "id": "88375540-a445-4872-997d-e8f0746476ba"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_TRUE",
+                                                        "args": {
+                                                            "variable": "7"
+                                                        },
+                                                        "id": "2a643fff-f40d-48a1-8982-db066987dcbe"
                                                     }
                                                 ],
                                                 "false": []
@@ -34932,13 +35024,6 @@
                                                 "spriteStateId": ""
                                             },
                                             "id": "d5c7e30a-866c-43ca-b721-98f7783fd3db"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_TRUE",
-                                            "args": {
-                                                "variable": "7"
-                                            },
-                                            "id": "ef79164c-beb8-437d-a129-30af093b8341"
                                         },
                                         {
                                             "command": "EVENT_SET_FALSE",
@@ -34967,6 +35052,13 @@
                                                 "variable": "8"
                                             },
                                             "id": "ec757005-5969-46a5-83aa-a366aa6a5945"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_TRUE",
+                                            "args": {
+                                                "variable": "7"
+                                            },
+                                            "id": "ef79164c-beb8-437d-a129-30af093b8341"
                                         }
                                     ]
                                 },
@@ -35098,6 +35190,14 @@
                                                                                             "children": {
                                                                                                 "true": [
                                                                                                     {
+                                                                                                        "command": "EVENT_GBVM_SCRIPT",
+                                                                                                        "args": {
+                                                                                                            "script": "VM_IDLE",
+                                                                                                            "__collapse": false
+                                                                                                        },
+                                                                                                        "id": "0fb68e77-4681-4fe3-b68f-1440e3c20153"
+                                                                                                    },
+                                                                                                    {
                                                                                                         "command": "EVENT_ACTOR_SET_STATE",
                                                                                                         "args": {
                                                                                                             "actorId": "player",
@@ -35105,14 +35205,6 @@
                                                                                                             "__collapse": false
                                                                                                         },
                                                                                                         "id": "675ed9e4-0e2f-4ff5-9ffd-45fd9976d363"
-                                                                                                    },
-                                                                                                    {
-                                                                                                        "command": "EVENT_SET_TRUE",
-                                                                                                        "args": {
-                                                                                                            "variable": "5",
-                                                                                                            "__collapse": false
-                                                                                                        },
-                                                                                                        "id": "a3c82fc5-8fed-438a-bd2d-a39cf03d7878"
                                                                                                     },
                                                                                                     {
                                                                                                         "command": "EVENT_SET_FALSE",
@@ -35141,6 +35233,22 @@
                                                                                                             "variable": "6"
                                                                                                         },
                                                                                                         "id": "6d05f8fa-3f52-4c86-ba91-296738c2a58d"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "command": "EVENT_GBVM_SCRIPT",
+                                                                                                        "args": {
+                                                                                                            "script": "VM_IDLE",
+                                                                                                            "__collapse": false
+                                                                                                        },
+                                                                                                        "id": "e850ea0a-c3cd-4a87-b3a3-d913935d6720"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "command": "EVENT_SET_TRUE",
+                                                                                                        "args": {
+                                                                                                            "variable": "5",
+                                                                                                            "__collapse": false
+                                                                                                        },
+                                                                                                        "id": "a3c82fc5-8fed-438a-bd2d-a39cf03d7878"
                                                                                                     }
                                                                                                 ],
                                                                                                 "false": []
@@ -35208,19 +35316,20 @@
                                 "children": {
                                     "true": [
                                         {
+                                            "command": "EVENT_GBVM_SCRIPT",
+                                            "args": {
+                                                "script": "VM_IDLE",
+                                                "__collapse": false
+                                            },
+                                            "id": "cc09d1af-ae88-4c97-b6d7-7321dba25e2e"
+                                        },
+                                        {
                                             "command": "EVENT_ACTOR_SET_STATE",
                                             "args": {
                                                 "actorId": "player",
                                                 "spriteStateId": ""
                                             },
                                             "id": "b53542f9-c2e8-45ad-9d2e-b8e8805d7d0a"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_TRUE",
-                                            "args": {
-                                                "variable": "7"
-                                            },
-                                            "id": "b4beaf65-1cbd-426b-b5a2-64431feeb80d"
                                         },
                                         {
                                             "command": "EVENT_SET_FALSE",
@@ -35249,6 +35358,21 @@
                                                 "variable": "8"
                                             },
                                             "id": "f5e21d19-c70c-42b8-b90f-1f4e7d212e91"
+                                        },
+                                        {
+                                            "command": "EVENT_GBVM_SCRIPT",
+                                            "args": {
+                                                "script": "VM_IDLE",
+                                                "__collapse": false
+                                            },
+                                            "id": "0f5c3bbc-c76e-4fad-926c-16488a111f5b"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_TRUE",
+                                            "args": {
+                                                "variable": "7"
+                                            },
+                                            "id": "b4beaf65-1cbd-426b-b5a2-64431feeb80d"
                                         }
                                     ],
                                     "false": []
@@ -35277,19 +35401,20 @@
                                 "children": {
                                     "true": [
                                         {
+                                            "command": "EVENT_GBVM_SCRIPT",
+                                            "args": {
+                                                "script": "VM_IDLE",
+                                                "__collapse": false
+                                            },
+                                            "id": "f84c97c0-95e8-46a7-8789-80c9d27d6255"
+                                        },
+                                        {
                                             "command": "EVENT_ACTOR_SET_STATE",
                                             "args": {
                                                 "actorId": "player",
                                                 "spriteStateId": ""
                                             },
                                             "id": "cb45526f-f4de-4dc4-be63-ea75416363da"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_TRUE",
-                                            "args": {
-                                                "variable": "7"
-                                            },
-                                            "id": "58d8a109-1bdc-433f-a9fb-e52de012d383"
                                         },
                                         {
                                             "command": "EVENT_SET_FALSE",
@@ -35318,6 +35443,21 @@
                                                 "variable": "8"
                                             },
                                             "id": "5e4d1a07-1b51-4153-88ab-fde4f13e3a71"
+                                        },
+                                        {
+                                            "command": "EVENT_GBVM_SCRIPT",
+                                            "args": {
+                                                "script": "VM_IDLE",
+                                                "__collapse": false
+                                            },
+                                            "id": "cf7f7e3b-a322-43db-b7bd-4552406e6c7c"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_TRUE",
+                                            "args": {
+                                                "variable": "7"
+                                            },
+                                            "id": "58d8a109-1bdc-433f-a9fb-e52de012d383"
                                         }
                                     ],
                                     "false": []
@@ -35366,11 +35506,12 @@
                                             "id": "8537c241-6ac9-4cd4-833d-7582fce1801c"
                                         },
                                         {
-                                            "command": "EVENT_IF_FALSE",
+                                            "command": "EVENT_IF_TRUE",
                                             "args": {
-                                                "variable": "8",
+                                                "variable": "7",
                                                 "__collapseElse": true,
-                                                "__disableElse": true
+                                                "__disableElse": true,
+                                                "__collapse": false
                                             },
                                             "children": {
                                                 "true": [
@@ -35380,12 +35521,14 @@
                                                             "script": "VM_IDLE",
                                                             "__collapse": true
                                                         },
-                                                        "id": "769c5cbd-1865-49cc-afe6-076b7c21cf04"
+                                                        "id": "920254b3-4ed5-48aa-abb2-d2b6bbec64c5"
                                                     },
                                                     {
-                                                        "command": "EVENT_IF_TRUE",
+                                                        "command": "EVENT_IF_INPUT",
                                                         "args": {
-                                                            "variable": "7",
+                                                            "input": [
+                                                                "up"
+                                                            ],
                                                             "__collapseElse": true,
                                                             "__disableElse": true
                                                         },
@@ -35395,78 +35538,70 @@
                                                                     "command": "EVENT_GBVM_SCRIPT",
                                                                     "args": {
                                                                         "script": "VM_IDLE",
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
-                                                                    "id": "920254b3-4ed5-48aa-abb2-d2b6bbec64c5"
+                                                                    "id": "ddba8878-dff3-49e6-a982-60d6cfbabd3a"
                                                                 },
                                                                 {
-                                                                    "command": "EVENT_IF_INPUT",
+                                                                    "command": "EVENT_ACTOR_SET_STATE",
                                                                     "args": {
-                                                                        "input": [
-                                                                            "up"
-                                                                        ],
-                                                                        "__collapseElse": true,
-                                                                        "__disableElse": true
+                                                                        "actorId": "player",
+                                                                        "spriteStateId": "playerAimUp"
                                                                     },
-                                                                    "children": {
-                                                                        "true": [
-                                                                            {
-                                                                                "command": "EVENT_ACTOR_SET_STATE",
-                                                                                "args": {
-                                                                                    "actorId": "player",
-                                                                                    "spriteStateId": "playerAimUp"
-                                                                                },
-                                                                                "id": "c6ee382a-28f9-43ac-a710-e4dd1fe4fe25"
-                                                                            },
-                                                                            {
-                                                                                "command": "EVENT_SET_TRUE",
-                                                                                "args": {
-                                                                                    "variable": "9"
-                                                                                },
-                                                                                "id": "f8bf1d93-890a-42c4-996c-4cc8788e064e"
-                                                                            },
-                                                                            {
-                                                                                "command": "EVENT_SET_FALSE",
-                                                                                "args": {
-                                                                                    "variable": "7"
-                                                                                },
-                                                                                "id": "2e2804ee-eb7e-49cb-8225-05fd579d1074"
-                                                                            },
-                                                                            {
-                                                                                "command": "EVENT_SET_FALSE",
-                                                                                "args": {
-                                                                                    "variable": "6"
-                                                                                },
-                                                                                "id": "cf95b1d3-0646-4e92-9896-4b6e9bc3cd8b"
-                                                                            },
-                                                                            {
-                                                                                "command": "EVENT_SET_FALSE",
-                                                                                "args": {
-                                                                                    "variable": "5"
-                                                                                },
-                                                                                "id": "a1b18df3-5f40-4a9c-a47e-ff9144a74b6d"
-                                                                            },
-                                                                            {
-                                                                                "command": "EVENT_SET_FALSE",
-                                                                                "args": {
-                                                                                    "variable": "8"
-                                                                                },
-                                                                                "id": "5ea05e9d-3c33-42f3-8938-55ebe8137ef3"
-                                                                            }
-                                                                        ],
-                                                                        "false": []
+                                                                    "id": "c6ee382a-28f9-43ac-a710-e4dd1fe4fe25"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_SET_FALSE",
+                                                                    "args": {
+                                                                        "variable": "7"
                                                                     },
-                                                                    "id": "cadc20cd-f7b0-4c05-96b9-586de97a1c34"
+                                                                    "id": "2e2804ee-eb7e-49cb-8225-05fd579d1074"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_SET_FALSE",
+                                                                    "args": {
+                                                                        "variable": "6"
+                                                                    },
+                                                                    "id": "cf95b1d3-0646-4e92-9896-4b6e9bc3cd8b"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_SET_FALSE",
+                                                                    "args": {
+                                                                        "variable": "5"
+                                                                    },
+                                                                    "id": "a1b18df3-5f40-4a9c-a47e-ff9144a74b6d"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_SET_FALSE",
+                                                                    "args": {
+                                                                        "variable": "8"
+                                                                    },
+                                                                    "id": "5ea05e9d-3c33-42f3-8938-55ebe8137ef3"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                                    "args": {
+                                                                        "script": "VM_IDLE",
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "id": "49fe642c-11ef-4032-a62e-c27a181e1ddf"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_SET_TRUE",
+                                                                    "args": {
+                                                                        "variable": "9"
+                                                                    },
+                                                                    "id": "f8bf1d93-890a-42c4-996c-4cc8788e064e"
                                                                 }
                                                             ],
                                                             "false": []
                                                         },
-                                                        "id": "5bdbf788-6483-44f5-b977-f82c0c809df5"
+                                                        "id": "cadc20cd-f7b0-4c05-96b9-586de97a1c34"
                                                     }
                                                 ],
                                                 "false": []
                                             },
-                                            "id": "5abd4031-a180-4098-83ff-0ecb97da6b8a"
+                                            "id": "5bdbf788-6483-44f5-b977-f82c0c809df5"
                                         }
                                     ],
                                     "false": []
@@ -35509,19 +35644,20 @@
                                     "true": [],
                                     "false": [
                                         {
+                                            "command": "EVENT_GBVM_SCRIPT",
+                                            "args": {
+                                                "script": "VM_IDLE",
+                                                "__collapse": false
+                                            },
+                                            "id": "f2693c27-d439-4af0-ac3e-66907ec91fc3"
+                                        },
+                                        {
                                             "command": "EVENT_ACTOR_SET_STATE",
                                             "args": {
                                                 "actorId": "player",
                                                 "spriteStateId": ""
                                             },
                                             "id": "ede17723-685d-4c6e-9050-8b679577d1a2"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_TRUE",
-                                            "args": {
-                                                "variable": "7"
-                                            },
-                                            "id": "35ef559f-01e7-494f-9353-97ea8691bb5c"
                                         },
                                         {
                                             "command": "EVENT_SET_FALSE",
@@ -35550,6 +35686,21 @@
                                                 "variable": "8"
                                             },
                                             "id": "769fd100-1480-49b9-aef9-931cc8aaab4e"
+                                        },
+                                        {
+                                            "command": "EVENT_GBVM_SCRIPT",
+                                            "args": {
+                                                "script": "VM_IDLE",
+                                                "__collapse": false
+                                            },
+                                            "id": "500a27a2-12ae-4e73-9da6-2c3ab2af1084"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_TRUE",
+                                            "args": {
+                                                "variable": "7"
+                                            },
+                                            "id": "35ef559f-01e7-494f-9353-97ea8691bb5c"
                                         }
                                     ]
                                 },
@@ -35937,8 +36088,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": "selected",
-        "worldScrollX": 1873,
-        "worldScrollY": 734,
+        "worldScrollX": 1582,
+        "worldScrollY": 809,
         "zoom": 200,
         "customColorsEnabled": true,
         "sgbEnabled": false,
