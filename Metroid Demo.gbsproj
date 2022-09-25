@@ -4520,13 +4520,6 @@
                         "__collapse": true
                     },
                     "id": "0b58188a-a505-4689-8b29-8be43692f8ac"
-                },
-                {
-                    "command": "EVENT_SET_TRUE",
-                    "args": {
-                        "variable": "18"
-                    },
-                    "id": "515c8e03-8c33-400f-9f14-88d61fff9075"
                 }
             ],
             "playerHit1Script": [],
@@ -34902,7 +34895,7 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": "selected",
-        "worldScrollX": 549,
+        "worldScrollX": 0,
         "worldScrollY": 0,
         "zoom": 100,
         "customColorsEnabled": true,
