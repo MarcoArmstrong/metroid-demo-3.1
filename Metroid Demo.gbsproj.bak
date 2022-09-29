@@ -36822,6 +36822,20 @@
             "symbol": "script_7",
             "script": [
                 {
+                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                    "args": {
+                        "type": "f23fa70e-cb01-4d22-b631-32780170e1bd",
+                        "priority": "medium",
+                        "pitch": 4,
+                        "frequency": 200,
+                        "duration": 0.5,
+                        "wait": true,
+                        "effect": 15,
+                        "__collapse": true
+                    },
+                    "id": "e333b7ba-7061-46bb-8b50-6d4425093f5d"
+                },
+                {
                     "command": "EVENT_IF_VALUE",
                     "args": {
                         "variable": "15",
@@ -37241,7 +37255,7 @@
                         "comparator": 3,
                         "__collapseElse": false,
                         "__disableElse": true,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -37546,7 +37560,7 @@
             "symbol": "sound_hammered_sav",
             "filename": "hammered.sav",
             "type": "fxhammer",
-            "inode": "55609066",
+            "inode": "56306955",
             "_v": 1663545471323
         }
     ],
@@ -37874,7 +37888,7 @@
         "playerPaletteId": "",
         "navigatorSplitSizes": [
             351,
-            225,
+            226,
             394
         ],
         "showNavigator": true,
