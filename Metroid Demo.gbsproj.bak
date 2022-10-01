@@ -36825,13 +36825,13 @@
                     "command": "EVENT_SOUND_PLAY_EFFECT",
                     "args": {
                         "type": "f23fa70e-cb01-4d22-b631-32780170e1bd",
-                        "priority": "medium",
+                        "priority": "high",
                         "pitch": 4,
                         "frequency": 200,
                         "duration": 0.5,
                         "wait": true,
                         "effect": 15,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "id": "e333b7ba-7061-46bb-8b50-6d4425093f5d"
                 },
