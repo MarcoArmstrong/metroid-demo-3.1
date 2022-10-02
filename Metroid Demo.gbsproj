@@ -14222,6 +14222,85 @@
                             "id": "8863843a-33fa-464d-ad99-ce6d00ec0cc1"
                         }
                     ]
+                },
+                {
+                    "name": "",
+                    "id": "9c062f79-81d1-4624-8ad0-cd5335334d1a",
+                    "x": 40,
+                    "y": 26,
+                    "symbol": "trigger_17",
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "b",
+                                    "up",
+                                    "down",
+                                    "a"
+                                ],
+                                "override": true,
+                                "__scriptTabs": "press"
+                            },
+                            "children": {
+                                "true": []
+                            },
+                            "id": "ddc6f834-3985-4ff2-b21c-a74040444864"
+                        }
+                    ],
+                    "leaveScript": [
+                        {
+                            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "up",
+                                    "down",
+                                    "right",
+                                    "left",
+                                    "a",
+                                    "b"
+                                ]
+                            },
+                            "id": "27f24c0b-6743-49a0-8986-8bcc0153f8f1"
+                        },
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "bc25df7b-e231-4f16-8811-6ccc6b04418e"
+                            },
+                            "id": "b978cccd-80ff-4142-bbdd-c652515803e1"
+                        },
+                        {
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "a"
+                                ],
+                                "override": true,
+                                "__scriptTabs": "press"
+                            },
+                            "children": {
+                                "true": []
+                            },
+                            "id": "403fcdd9-97ea-404f-9b3f-54c4e4d1c0b3"
+                        },
+                        {
+                            "command": "EVENT_SET_FALSE",
+                            "args": {
+                                "variable": "7"
+                            },
+                            "id": "5e803bc1-bf75-484f-91fe-b9d814ee018a"
+                        },
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "8"
+                            },
+                            "id": "dce5a550-0a4f-4ba4-b9b5-c20fe760ea74"
+                        }
+                    ]
                 }
             ],
             "script": [
@@ -24368,6 +24447,16 @@
                 0,
                 0
             ]
+        },
+        {
+            "id": "97bb3bf1-e9fa-4d11-848f-015ac5b5e7f4",
+            "name": "brinstar_04",
+            "symbol": "bg_brinstar_04",
+            "width": 40,
+            "height": 18,
+            "imageWidth": 320,
+            "imageHeight": 144,
+            "filename": "brinstar_04.png"
         },
         {
             "id": "0125a9fc-2f3a-4992-bbbb-97695d09ce9b",
@@ -37881,8 +37970,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": "selected",
-        "worldScrollX": 231,
-        "worldScrollY": 1712,
+        "worldScrollX": 2286,
+        "worldScrollY": 650,
         "zoom": 200,
         "customColorsEnabled": true,
         "sgbEnabled": false,
