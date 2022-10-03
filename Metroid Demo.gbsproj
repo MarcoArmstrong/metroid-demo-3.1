@@ -37690,7 +37690,7 @@
             "actors": {
                 "0": {
                     "id": "0",
-                    "name": "Sel"
+                    "name": "Self"
                 }
             },
             "symbol": "script_8",
