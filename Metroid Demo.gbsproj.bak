@@ -8652,7 +8652,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -38081,8 +38081,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": "selected",
-        "worldScrollX": 2264,
-        "worldScrollY": 1028,
+        "worldScrollX": 247,
+        "worldScrollY": 820,
         "zoom": 200,
         "customColorsEnabled": true,
         "sgbEnabled": false,
