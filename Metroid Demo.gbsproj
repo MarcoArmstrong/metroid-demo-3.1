@@ -3415,12 +3415,34 @@
                     "id": "f4ba4672-f097-4a9d-b66e-3ffff5f6d648"
                 },
                 {
-                    "command": "EVENT_SET_TRUE",
+                    "command": "EVENT_IF_FALSE",
                     "args": {
-                        "variable": "7",
-                        "__collapse": true
+                        "variable": "8",
+                        "__collapseElse": false
                     },
-                    "id": "05581198-5a60-4560-a28f-7b4875a1cb69"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "7",
+                                    "__collapse": true
+                                },
+                                "id": "578dff38-4189-434e-9601-2874d873e2e0"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": "playerMorphBall"
+                                },
+                                "id": "fc27e360-95d0-4801-a7b6-fc9fec2b02a4"
+                            }
+                        ]
+                    },
+                    "id": "d9f5d5b3-c001-4e3a-a44c-53aae734252e"
                 },
                 {
                     "command": "EVENT_FADE_IN",
@@ -6552,12 +6574,34 @@
                     "id": "110cfac1-e86d-4a23-bc94-170c89673eca"
                 },
                 {
-                    "command": "EVENT_SET_TRUE",
+                    "command": "EVENT_IF_FALSE",
                     "args": {
-                        "variable": "7",
-                        "__collapse": true
+                        "variable": "8",
+                        "__collapseElse": false
                     },
-                    "id": "ca07629c-4137-4b88-ae46-4f48c8eb47a1"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "7",
+                                    "__collapse": true
+                                },
+                                "id": "3f9db76f-710f-4d8e-8d30-e6e15b89af75"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": "playerMorphBall"
+                                },
+                                "id": "2d95d024-7523-41a6-96e9-91e1029298db"
+                            }
+                        ]
+                    },
+                    "id": "16beaf21-4f70-4214-affe-2e08dc3dcaa8"
                 },
                 {
                     "command": "EVENT_FADE_IN",
@@ -13834,12 +13878,34 @@
                     "id": "ad6371ab-ae40-486f-a893-5e4b934c0bc4"
                 },
                 {
-                    "command": "EVENT_SET_TRUE",
+                    "command": "EVENT_IF_FALSE",
                     "args": {
-                        "variable": "7",
-                        "__collapse": true
+                        "variable": "8",
+                        "__collapseElse": false
                     },
-                    "id": "5cb865e2-80bf-424c-ba84-9fb38552ab35"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "7",
+                                    "__collapse": true
+                                },
+                                "id": "677ff77e-3972-4bdd-ac80-5affd3eef7e7"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": "playerMorphBall"
+                                },
+                                "id": "c7d1e7e8-5c3c-459a-ba35-be0aefd11a28"
+                            }
+                        ]
+                    },
+                    "id": "dc37a878-9472-46b8-b33e-68c20c4e77b0"
                 },
                 {
                     "command": "EVENT_FADE_IN",
@@ -14712,11 +14778,34 @@
                     "id": "30b143ca-dcec-4f0f-aebe-b03f04655745"
                 },
                 {
-                    "command": "EVENT_SET_TRUE",
+                    "command": "EVENT_IF_FALSE",
                     "args": {
-                        "variable": "7"
+                        "variable": "8",
+                        "__collapseElse": false
                     },
-                    "id": "a5d58630-75ac-4760-a3c9-d4c65edcb408"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "7",
+                                    "__collapse": true
+                                },
+                                "id": "d0372cd3-99ee-48cc-880c-87520bb04c73"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": "playerMorphBall"
+                                },
+                                "id": "51ebd5a2-4ef6-44b3-8120-0d1de83ecaab"
+                            }
+                        ]
+                    },
+                    "id": "71940cc8-e164-4f59-b3dd-c37d4471802c"
                 },
                 {
                     "command": "EVENT_FADE_IN",
@@ -15711,11 +15800,34 @@
                     "id": "1fb1c6a3-77d8-4104-a4de-5520d8421c6e"
                 },
                 {
-                    "command": "EVENT_SET_TRUE",
+                    "command": "EVENT_IF_FALSE",
                     "args": {
-                        "variable": "7"
+                        "variable": "8",
+                        "__collapseElse": false
                     },
-                    "id": "dde42d59-7c6b-4b30-b4aa-6a3adfaa5ccf"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "7",
+                                    "__collapse": true
+                                },
+                                "id": "dde42d59-7c6b-4b30-b4aa-6a3adfaa5ccf"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": "playerMorphBall"
+                                },
+                                "id": "e6b8e19c-1da6-45ab-b2b4-4b017ad837cd"
+                            }
+                        ]
+                    },
+                    "id": "3d89dd6b-4a93-4fa9-b0f0-e51642cbd8d8"
                 },
                 {
                     "command": "EVENT_FADE_IN",

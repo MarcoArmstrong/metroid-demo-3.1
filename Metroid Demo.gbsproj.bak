@@ -14227,8 +14227,8 @@
             "autoFadeSpeed": null,
             "id": "8814c755-654a-4804-9b6b-6429aa0bea48",
             "symbol": "scene_6",
-            "x": 1014,
-            "y": 473.5,
+            "x": 1013,
+            "y": 511.5,
             "actors": [
                 {
                     "name": "Player Updates",
@@ -15485,8 +15485,8 @@
             "autoFadeSpeed": null,
             "id": "658aab11-6a50-4e7c-85f8-f39c0d900e22",
             "symbol": "scene_8",
-            "x": 850.5,
-            "y": 252.5,
+            "x": 858.5,
+            "y": 304.5,
             "actors": [
                 {
                     "name": "Player Updates",
@@ -15713,7 +15713,8 @@
                 {
                     "command": "EVENT_SET_TRUE",
                     "args": {
-                        "variable": "7"
+                        "variable": "7",
+                        "__collapse": true
                     },
                     "id": "dde42d59-7c6b-4b30-b4aa-6a3adfaa5ccf"
                 },
@@ -39817,9 +39818,9 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": "selected",
-        "worldScrollX": 1526,
-        "worldScrollY": 427,
-        "zoom": 200,
+        "worldScrollX": 0,
+        "worldScrollY": 0,
+        "zoom": 50,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
