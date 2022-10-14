@@ -7469,7 +7469,7 @@
                             "value": 0
                         },
                         "__collapse": true,
-                        "__comment": false
+                        "__comment": true
                     },
                     "id": "fa5b5e42-1301-4184-bdbc-93aa76b5ef91"
                 },
@@ -7482,7 +7482,7 @@
                             "value": 0
                         },
                         "__collapse": true,
-                        "__comment": false
+                        "__comment": true
                     },
                     "id": "596b2757-8b1b-456c-875e-030e55022d2f"
                 },
@@ -13319,7 +13319,8 @@
                             "command": "EVENT_IF_FALSE",
                             "args": {
                                 "variable": "18",
-                                "__collapseElse": false
+                                "__collapseElse": false,
+                                "__disableElse": true
                             },
                             "children": {
                                 "true": [
@@ -15213,9 +15214,6 @@
                 15,
                 15,
                 0,
-                15,
-                15,
-                15,
                 0,
                 0,
                 0,
@@ -15250,11 +15248,9 @@
                 0,
                 0,
                 0,
-                15,
-                15,
-                15,
-                15,
-                15,
+                0,
+                0,
+                0,
                 15,
                 15,
                 0,
@@ -15290,57 +15286,6 @@
                 0,
                 0,
                 0,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                0,
-                0,
-                0,
-                0,
                 0,
                 0,
                 0,
@@ -15370,30 +15315,6 @@
                 0,
                 0,
                 0,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
                 0,
                 0,
                 0,
@@ -15412,16 +15333,6 @@
                 0,
                 15,
                 15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                0,
-                0,
-                0,
                 0,
                 0,
                 0,
@@ -15450,16 +15361,10 @@
                 0,
                 0,
                 0,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
-                15,
+                0,
+                0,
+                0,
+                0,
                 0,
                 0,
                 0,
@@ -15468,6 +15373,102 @@
                 0,
                 15,
                 15,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
                 0,
                 0,
                 0,
@@ -15685,6 +15686,29 @@
                     "id": "615b6a79-347a-4228-ae7a-650bdf7a59a9",
                     "x": 18,
                     "y": 0
+                },
+                {
+                    "name": "Energy Tank",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "cf3530cd-461b-403a-9841-bbe230c0f675",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 7,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_25",
+                    "script": [],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "b70b1355-8332-422e-8b07-7e9c30a8387f",
+                    "x": 6,
+                    "y": 11
                 }
             ],
             "triggers": [
@@ -15707,6 +15731,167 @@
                                 "fadeSpeed": "2"
                             },
                             "id": "309d3a81-7397-4596-9b4a-aec00c50ffa8"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "a8eeb3d9-37d9-415b-9487-cdaaca4cf545",
+                    "x": 6,
+                    "y": 10,
+                    "symbol": "trigger_20",
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "19",
+                                "flag": 0,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [],
+                                "false": [
+                                    {
+                                        "command": "EVENT_GBVM_SCRIPT",
+                                        "args": {
+                                            "script": "VM_IDLE",
+                                            "__collapse": false
+                                        },
+                                        "id": "77af9d0f-2bcd-4743-9051-de7969c25fd0"
+                                    },
+                                    {
+                                        "command": "EVENT_MUSIC_STOP",
+                                        "args": {},
+                                        "id": "5800ea3f-c821-4cc1-bce3-0c272143b06c"
+                                    },
+                                    {
+                                        "command": "EVENT_MUSIC_PLAY",
+                                        "args": {
+                                            "musicId": "a488794d-dbdb-4816-9e1f-fad01ff11fa7"
+                                        },
+                                        "id": "38cb3bce-81f9-4bf9-b073-fbcfffcda1e2"
+                                    },
+                                    {
+                                        "command": "EVENT_WAIT",
+                                        "args": {
+                                            "time": 6,
+                                            "frames": 30
+                                        },
+                                        "id": "222332df-c352-4036-bb8e-d9da3b6bca97"
+                                    },
+                                    {
+                                        "command": "EVENT_MUSIC_STOP",
+                                        "args": {},
+                                        "id": "7591fcae-0e09-4f9f-86df-f1c7ff1ab31d"
+                                    },
+                                    {
+                                        "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                        "args": {
+                                            "__scriptTabs": "text",
+                                            "minHeight": 3,
+                                            "maxHeight": 3,
+                                            "position": "bottom",
+                                            "showBorder": "true",
+                                            "clearPrevious": true,
+                                            "textX": 1,
+                                            "textY": 1,
+                                            "textHeight": 3,
+                                            "closeWhen": "key",
+                                            "closeButton": "a",
+                                            "text": [
+                                                "Energy Tank"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "181471b5-2dea-4bcb-966b-414c4aa2d437"
+                                    },
+                                    {
+                                        "command": "EVENT_MUSIC_PLAY",
+                                        "args": {
+                                            "musicId": "a8338094-bfdd-4c79-b7ef-6bab3000df14"
+                                        },
+                                        "id": "7077b432-bae4-41f4-9a1e-dac3c4aed422"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_FLAGS",
+                                        "args": {
+                                            "variable": "19",
+                                            "flag1": true,
+                                            "flag2": false,
+                                            "flag3": false,
+                                            "flag4": false,
+                                            "flag5": false,
+                                            "flag6": false,
+                                            "flag7": false,
+                                            "flag8": false,
+                                            "flag9": false,
+                                            "flag10": false,
+                                            "flag11": false,
+                                            "flag12": false,
+                                            "flag13": false,
+                                            "flag14": false,
+                                            "flag15": false,
+                                            "flag16": false
+                                        },
+                                        "id": "a07106df-7556-4159-b033-b930b28dcd97"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "b70b1355-8332-422e-8b07-7e9c30a8387f"
+                                        },
+                                        "id": "4fb87580-bda2-471b-8c4c-57e0e8075d8e"
+                                    },
+                                    {
+                                        "command": "EVENT_VARIABLE_MATH",
+                                        "args": {
+                                            "vectorX": "15",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "L0",
+                                            "value": 1,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false,
+                                            "__collapse": false
+                                        },
+                                        "id": "498f12ba-c084-4082-ac02-2ac2cbe29877"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_VALUE",
+                                        "args": {
+                                            "variable": "16",
+                                            "value": {
+                                                "type": "variable",
+                                                "value": "15"
+                                            }
+                                        },
+                                        "id": "6ae602ed-989c-437f-aef1-94907652673b"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_VALUE",
+                                        "args": {
+                                            "variable": "13",
+                                            "value": {
+                                                "type": "number",
+                                                "value": 99
+                                            }
+                                        },
+                                        "id": "bf3fedf5-4ae1-430a-891c-f56fd8afbdc2"
+                                    },
+                                    {
+                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                        "args": {
+                                            "customEventId": "b5a433c0-b713-49f7-80ab-4058bb84d338"
+                                        },
+                                        "id": "ae0b292a-249a-49e3-8ac4-277651081ce7"
+                                    }
+                                ]
+                            },
+                            "id": "e8255340-293c-432b-93c5-34b1169ea408"
                         }
                     ],
                     "leaveScript": []
@@ -15828,6 +16013,28 @@
                         ]
                     },
                     "id": "3d89dd6b-4a93-4fa9-b0f0-e51642cbd8d8"
+                },
+                {
+                    "command": "EVENT_IF_FLAGS_COMPARE",
+                    "args": {
+                        "variable": "19",
+                        "flag": 0,
+                        "__collapseElse": true,
+                        "__disableElse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_HIDE",
+                                "args": {
+                                    "actorId": "b70b1355-8332-422e-8b07-7e9c30a8387f"
+                                },
+                                "id": "2326080a-6d35-43dc-9881-4118cb6e4828"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "2adbfb2a-d946-4705-8431-a82bd192250e"
                 },
                 {
                     "command": "EVENT_FADE_IN",
@@ -25360,12 +25567,6 @@
                 0,
                 0,
                 0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
                 0,
                 0,
                 0,
@@ -25400,12 +25601,6 @@
                 0,
                 0,
                 0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
                 0,
                 0,
                 0,
@@ -25440,12 +25635,6 @@
                 0,
                 0,
                 0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
                 0,
                 0,
                 0,
@@ -25480,12 +25669,6 @@
                 0,
                 0,
                 0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
                 0,
                 0,
                 0,
@@ -25520,14 +25703,6 @@
                 0,
                 0,
                 0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
                 0,
                 0,
                 0,
@@ -25560,14 +25735,6 @@
                 0,
                 0,
                 0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
                 0,
                 0,
                 0,
@@ -25600,14 +25767,54 @@
                 0,
                 0,
                 0,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
-                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
                 0,
                 0,
                 0,
@@ -27716,6 +27923,196 @@
                                             "priority": false
                                         }
                                     ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "numTiles": 6,
+            "canvasWidth": 16,
+            "canvasHeight": 16,
+            "boundsX": 0,
+            "boundsY": 0,
+            "boundsWidth": 16,
+            "boundsHeight": 16,
+            "animSpeed": 15
+        },
+        {
+            "id": "cf3530cd-461b-403a-9841-bbe230c0f675",
+            "name": "energy_tank",
+            "symbol": "sprite_morph_ball_copy",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "energy_tank.png",
+            "checksum": "0fb6c0744228db6f3a16f327a240fe0a42ce3909",
+            "width": 64,
+            "height": 16,
+            "states": [
+                {
+                    "id": "f78cdee9-703c-4589-b322-7e3a67b6026a",
+                    "name": "",
+                    "animationType": "fixed",
+                    "flipLeft": false,
+                    "animations": [
+                        {
+                            "id": "54086f85-9692-4913-ac33-ac70919ee654",
+                            "frames": [
+                                {
+                                    "id": "022a028f-abdb-4a49-af88-d55aa76e241c",
+                                    "tiles": [
+                                        {
+                                            "id": "5df3ead7-35ae-4237-ae33-b65a7dac5dc4",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 0,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "b7222585-abe8-4f77-b6ef-825c703c4efa",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 8,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "e3deb22e-e826-4a38-bfa6-75c5144929e7",
+                                    "tiles": [
+                                        {
+                                            "id": "fbd4f31d-57a1-47be-b01f-9d96403c27d7",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 16,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "d879c62d-dd51-4ae4-9ec5-1d1bd9813415",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 24,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "47f9288f-b7ca-4a26-b3bd-4ec7175ec67d",
+                                    "tiles": [
+                                        {
+                                            "id": "c0377244-fb01-407f-8cb9-d4137bad0818",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 32,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "a2972d2c-7495-452b-9e97-09f2942e7222",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 40,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "0b196877-f575-44a4-aa52-14d44a2d07a5",
+                            "frames": [
+                                {
+                                    "id": "2a2a2d43-ad38-4083-884c-904ceec98a3f",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "9082aec1-d13c-4635-abc5-72eae162b240",
+                            "frames": [
+                                {
+                                    "id": "6f0b0a86-cc09-45b4-94f5-8d8d927985ef",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "8ac89187-2d0d-4159-8109-c4511a695f25",
+                            "frames": [
+                                {
+                                    "id": "8a6836d8-8e93-4a97-b791-d0861cb9a7b4",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "cc0f5bcd-03b2-4454-a1fc-ff22210c4db3",
+                            "frames": [
+                                {
+                                    "id": "a9039550-ec42-4280-b6ad-7c29032bbef5",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5fa02e2d-bd04-473f-b29e-7e9c78f7d8c9",
+                            "frames": [
+                                {
+                                    "id": "2b300640-8708-4bf4-bc2c-162017b547f8",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "b226e652-70bc-4bc7-a99f-d8d69b78de8c",
+                            "frames": [
+                                {
+                                    "id": "5b0a36d4-7ce7-4d82-9886-256b2438e146",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "9b60b523-3edb-41e5-9194-826e49ae3c89",
+                            "frames": [
+                                {
+                                    "id": "7656d9ce-358a-4c2f-af8d-c758503c085a",
+                                    "tiles": []
                                 }
                             ]
                         }
@@ -39904,6 +40301,11 @@
             "id": "155d3055-2d52-48e6-ad02-76be8e3e13b3__L4",
             "name": "Heal",
             "symbol": "var_heal_5"
+        },
+        {
+            "id": "19",
+            "name": "energyTanks",
+            "symbol": "var_energytanks"
         }
     ],
     "engineFieldValues": [
