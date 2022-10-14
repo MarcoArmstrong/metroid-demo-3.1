@@ -40315,11 +40315,27 @@
         },
         {
             "id": "plat_max_fall_vel",
-            "value": 12500
+            "value": 12600
         },
         {
             "id": "plat_jump_vel",
-            "value": 16996
+            "value": 17000
+        },
+        {
+            "id": "plat_walk_acc",
+            "value": 680
+        },
+        {
+            "id": "plat_run_acc",
+            "value": 680
+        },
+        {
+            "id": "plat_dec",
+            "value": 680
+        },
+        {
+            "id": "plat_walk_vel",
+            "value": 6500
         }
     ],
     "settings": {
@@ -40331,9 +40347,9 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": "selected",
-        "worldScrollX": 0,
-        "worldScrollY": 0,
-        "zoom": 50,
+        "worldScrollX": 2412,
+        "worldScrollY": 1102,
+        "zoom": 200,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",

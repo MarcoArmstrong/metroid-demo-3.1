@@ -7469,7 +7469,7 @@
                             "value": 0
                         },
                         "__collapse": true,
-                        "__comment": false
+                        "__comment": true
                     },
                     "id": "fa5b5e42-1301-4184-bdbc-93aa76b5ef91"
                 },
@@ -7482,7 +7482,7 @@
                             "value": 0
                         },
                         "__collapse": true,
-                        "__comment": false
+                        "__comment": true
                     },
                     "id": "596b2757-8b1b-456c-875e-030e55022d2f"
                 },
@@ -16013,6 +16013,28 @@
                         ]
                     },
                     "id": "3d89dd6b-4a93-4fa9-b0f0-e51642cbd8d8"
+                },
+                {
+                    "command": "EVENT_IF_FLAGS_COMPARE",
+                    "args": {
+                        "variable": "19",
+                        "flag": 0,
+                        "__collapseElse": true,
+                        "__disableElse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_HIDE",
+                                "args": {
+                                    "actorId": "b70b1355-8332-422e-8b07-7e9c30a8387f"
+                                },
+                                "id": "2326080a-6d35-43dc-9881-4118cb6e4828"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "2adbfb2a-d946-4705-8431-a82bd192250e"
                 },
                 {
                     "command": "EVENT_FADE_IN",
@@ -40298,6 +40320,18 @@
         {
             "id": "plat_jump_vel",
             "value": 16996
+        },
+        {
+            "id": "plat_walk_acc",
+            "value": 768
+        },
+        {
+            "id": "plat_run_acc",
+            "value": 768
+        },
+        {
+            "id": "plat_dec",
+            "value": 600
         }
     ],
     "settings": {
@@ -40309,9 +40343,9 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": "selected",
-        "worldScrollX": 3253,
-        "worldScrollY": 1165,
-        "zoom": 400,
+        "worldScrollX": 2412,
+        "worldScrollY": 1102,
+        "zoom": 200,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
