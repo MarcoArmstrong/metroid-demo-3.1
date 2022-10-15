@@ -40319,7 +40319,7 @@
         },
         {
             "id": "plat_jump_vel",
-            "value": 17000
+            "value": 18300
         },
         {
             "id": "plat_walk_acc",
@@ -40336,6 +40336,10 @@
         {
             "id": "plat_walk_vel",
             "value": 6500
+        },
+        {
+            "id": "plat_hold_grav",
+            "value": 600
         }
     ],
     "settings": {

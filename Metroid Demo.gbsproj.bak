@@ -40315,22 +40315,30 @@
         },
         {
             "id": "plat_max_fall_vel",
-            "value": 12500
+            "value": 12600
         },
         {
             "id": "plat_jump_vel",
-            "value": 16996
+            "value": 17000
         },
         {
             "id": "plat_walk_acc",
-            "value": 768
+            "value": 680
         },
         {
             "id": "plat_run_acc",
-            "value": 768
+            "value": 680
         },
         {
             "id": "plat_dec",
+            "value": 680
+        },
+        {
+            "id": "plat_walk_vel",
+            "value": 6500
+        },
+        {
+            "id": "plat_hold_grav",
             "value": 600
         }
     ],
